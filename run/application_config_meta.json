@@ -1,0 +1,356 @@
+{
+  "siteFile": {
+    "/favicon.ico": "/Users/baibangyi/car-shop/config/config.default.js"
+  },
+  "view": {
+    "cache": "/Users/baibangyi/car-shop/node_modules/egg-view/config/config.local.js",
+    "root": "/Users/baibangyi/car-shop/node_modules/egg-view/config/config.default.js",
+    "defaultExtension": "/Users/baibangyi/car-shop/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/baibangyi/car-shop/node_modules/egg-view/config/config.default.js",
+    "mapping": {
+      ".js": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js"
+    }
+  },
+  "vuessr": {
+    "layout": "/Users/baibangyi/car-shop/config/config.default.js",
+    "renderOptions": {
+      "basedir": "/Users/baibangyi/car-shop/config/config.default.js",
+      "runInNewContext": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js"
+    },
+    "doctype": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "manifest": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "injectHeadRegex": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "injectBodyRegex": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "injectCss": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.local.js",
+    "injectJs": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "injectRes": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "crossorigin": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "mergeLocals": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "fallbackToClient": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "viewEngine": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "cache": {
+      "max": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js",
+      "maxAge": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js"
+    },
+    "afterRender": "/Users/baibangyi/car-shop/node_modules/egg-view-vue-ssr/config/config.default.js"
+  },
+  "logger": {
+    "consoleLevel": "/Users/baibangyi/car-shop/config/config.default.js",
+    "dir": "/Users/baibangyi/car-shop/config/config.default.js",
+    "encoding": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "env": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "level": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/baibangyi/car-shop/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/baibangyi/car-shop/config/config.default.js",
+    "dir": "/Users/baibangyi/car-shop/config/config.default.js",
+    "maxAge": "/Users/baibangyi/car-shop/config/config.local.js",
+    "dynamic": "/Users/baibangyi/car-shop/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/baibangyi/car-shop/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/baibangyi/car-shop/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/baibangyi/car-shop/node_modules/egg-static/config/config.default.js"
+  },
+  "keys": "/Users/baibangyi/car-shop/config/config.default.js",
+  "middleware": "/Users/baibangyi/car-shop/config/config.default.js",
+  "development": {
+    "watchDirs": "/Users/baibangyi/car-shop/config/config.local.js",
+    "ignoreDirs": "/Users/baibangyi/car-shop/config/config.local.js",
+    "fastReady": "/Users/baibangyi/car-shop/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/baibangyi/car-shop/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/baibangyi/car-shop/node_modules/egg-development/config/config.default.js"
+  },
+  "logview": {
+    "dir": "/Users/baibangyi/car-shop/config/config.local.js",
+    "prefix": "/Users/baibangyi/car-shop/node_modules/egg-logview/config/config.default.js",
+    "staticHost": "/Users/baibangyi/car-shop/node_modules/egg-logview/config/config.default.js"
+  },
+  "mongoose": {
+    "url": "/Users/baibangyi/car-shop/config/config.local.js",
+    "options": {
+      "connectTimeoutMS": "/Users/baibangyi/car-shop/config/config.local.js",
+      "socketTimeoutMS": "/Users/baibangyi/car-shop/config/config.local.js",
+      "maxPoolSize": "/Users/baibangyi/car-shop/config/config.local.js",
+      "minPoolSize": "/Users/baibangyi/car-shop/config/config.local.js"
+    },
+    "loadModel": "/Users/baibangyi/car-shop/node_modules/egg-mongoose/config/config.default.js",
+    "app": "/Users/baibangyi/car-shop/node_modules/egg-mongoose/config/config.default.js",
+    "agent": "/Users/baibangyi/car-shop/node_modules/egg-mongoose/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/baibangyi/car-shop/config/config.local.js",
+    "protocolWhiteList": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "/Users/baibangyi/car-shop/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/baibangyi/car-shop/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/baibangyi/car-shop/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/baibangyi/car-shop/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/baibangyi/car-shop/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/baibangyi/car-shop/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/baibangyi/car-shop/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/baibangyi/car-shop/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/baibangyi/car-shop/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/baibangyi/car-shop/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/baibangyi/car-shop/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/baibangyi/car-shop/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/baibangyi/car-shop/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/baibangyi/car-shop/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/baibangyi/car-shop/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/baibangyi/car-shop/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/baibangyi/car-shop/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/baibangyi/car-shop/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/baibangyi/car-shop/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/baibangyi/car-shop/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/baibangyi/car-shop/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/baibangyi/car-shop/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/baibangyi/car-shop/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/baibangyi/car-shop/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/baibangyi/car-shop/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/baibangyi/car-shop/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/baibangyi/car-shop/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/baibangyi/car-shop/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/baibangyi/car-shop/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "cors": "/Users/baibangyi/car-shop/node_modules/egg-cors/config/config.default.js",
+  "webpack": {
+    "port": "/Users/baibangyi/car-shop/node_modules/egg-webpack/config/config.default.js",
+    "proxy": {
+      "host": "/Users/baibangyi/car-shop/node_modules/egg-webpack/config/config.default.js",
+      "match": "/Users/baibangyi/car-shop/node_modules/egg-webpack/config/config.default.js"
+    },
+    "webpackConfigList": "/Users/baibangyi/car-shop/node_modules/egg-webpack/config/config.default.js"
+  },
+  "env": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "name": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "version": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "description": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "scripts": {
+      "debug": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "clean": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "build": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "start": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "dev": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "lint": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "fix": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "ii": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "axios": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "cross-env": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg-logger": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg-mongoose": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg-view-vue-ssr": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "element-ui": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "extend": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "lodash": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "moment": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "vue": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "vue-hot-reload-api": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "vue-router": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "vuex": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "vuex-router-sync": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod-egg": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "easywebpack-cli": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "easywebpack-vue": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg-logview": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg-webpack": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "egg-webpack-vue": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "eslint-plugin-vue": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "imagemin-webpack-plugin": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "ip": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "vconsole": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "url": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "license": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "homepage": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "webpack": {
+      "loaders": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "strict": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "depth": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    }
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "logging": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "port": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/baibangyi/car-shop/node_modules/egg/config/config.default.js"
+}

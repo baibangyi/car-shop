@@ -1,0 +1,149 @@
+2019-02-21 10:53:29,691 INFO 31153 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 10:53:40,573 ERROR 31153 [app.js] server render bundle error, try client render, the server render error Error: Module parse failed: Unexpected token (21:23)
+You may need an appropriate loader to handle this file type.
+|     }, {
+|       path: '/detail/:id',
+>       component: () => import('./detail')
+|     }]
+|   });
+    at eval (webpack:///./app/web/page/app/router/index.js?:1:7)
+    at Object../app/web/page/app/router/index.js (__vue_ssr_bundle__:203:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at eval (webpack:///./app/web/page/app/index.js?:5:65)
+    at Module../app/web/page/app/index.js (__vue_ssr_bundle__:180:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at __vue_ssr_bundle__:84:18
+    at Object.<anonymous> (__vue_ssr_bundle__:87:10)
+    at evaluateModule (/Users/baibangyi/car-shop/node_modules/vue-server-renderer/build.dev.js:9219:21)
+    at /Users/baibangyi/car-shop/node_modules/vue-server-renderer/build.dev.js:9277:18
+2019-02-21 10:53:40,604 INFO 31153 [-/172.20.10.13/-/191ms GET /] [access] 172.20.10.13: - GET / HTTP/200 894 - 168 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-21 10:56:21,049 INFO 31351 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 11:02:29,712 INFO 31464 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 11:03:06,752 INFO 31488 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 11:03:21,448 INFO 31492 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 11:04:03,293 INFO 31495 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 11:05:21,370 INFO 31508 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 11:06:14,282 INFO 31536 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 11:06:34,419 INFO 31539 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 11:06:41,144 INFO 31541 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 11:07:50,125 INFO 31553 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 13:53:01,120 INFO 32235 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:00:42,133 INFO 32357 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:06:34,474 INFO 32462 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:18:18,059 INFO 32647 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:22:36,623 INFO 32735 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:31:20,884 INFO 32893 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:31:20,928 ERROR 32893 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: Model is not defined
+    at module.exports.app (/Users/baibangyi/car-shop/app/model/user.js:11:24)
+    at getExports (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:103:14)
+    at app.beforeStart (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:43:7)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/Users/baibangyi/car-shop/node_modules/egg-core/lib/lifecycle.js:248:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:282:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:743:3)
+
+pid: 32893
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-21 14:32:28,906 INFO 32903 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:32:28,954 ERROR 32903 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: Model is not defined
+    at module.exports.app (/Users/baibangyi/car-shop/app/model/user.js:11:24)
+    at getExports (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:103:14)
+    at app.beforeStart (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:43:7)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/Users/baibangyi/car-shop/node_modules/egg-core/lib/lifecycle.js:248:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:282:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:743:3)
+
+pid: 32903
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-21 14:32:32,633 INFO 32905 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:32:32,674 ERROR 32905 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: Model is not defined
+    at module.exports.app (/Users/baibangyi/car-shop/app/model/user.js:11:24)
+    at getExports (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:103:14)
+    at app.beforeStart (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:43:7)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/Users/baibangyi/car-shop/node_modules/egg-core/lib/lifecycle.js:248:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:282:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:743:3)
+
+pid: 32905
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-21 14:33:15,850 INFO 32910 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:33:15,890 ERROR 32910 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: Model is not defined
+    at module.exports.app (/Users/baibangyi/car-shop/app/model/user.js:11:24)
+    at getExports (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:103:14)
+    at app.beforeStart (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:43:7)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/Users/baibangyi/car-shop/node_modules/egg-core/lib/lifecycle.js:248:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:282:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:743:3)
+
+pid: 32910
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-21 14:33:21,476 INFO 32913 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:33:21,534 ERROR 32913 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: Model is not defined
+    at module.exports.app (/Users/baibangyi/car-shop/app/model/user.js:11:24)
+    at getExports (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:103:14)
+    at app.beforeStart (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:43:7)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/Users/baibangyi/car-shop/node_modules/egg-core/lib/lifecycle.js:248:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:282:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:743:3)
+
+pid: 32913
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-21 14:34:36,067 INFO 32967 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-21 14:34:36,117 ERROR 32967 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: Model is not defined
+    at module.exports.app (/Users/baibangyi/car-shop/app/model/user.js:11:24)
+    at getExports (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:103:14)
+    at app.beforeStart (/Users/baibangyi/car-shop/node_modules/egg-mongoose/lib/mongoose.js:43:7)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/Users/baibangyi/car-shop/node_modules/egg-core/lib/lifecycle.js:248:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:282:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:743:3)
+
+pid: 32967
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-21 14:39:29,167 INFO 33055 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs

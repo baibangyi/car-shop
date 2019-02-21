@@ -1,0 +1,56 @@
+2019-02-21 10:53:29,613 INFO 31153 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 10:53:29,613 INFO 31153 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 10:53:29,756 INFO 31152 [Timer] /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 47190248ms at 2019-02-22 00:00:00.004
+2019-02-21 10:53:29,757 INFO 31152 [Timer] /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 47191244ms at 2019-02-22 00:00:01.001
+2019-02-21 10:56:21,110 INFO 31346 [Timer] /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 47018893ms at 2019-02-22 00:00:00.003
+2019-02-21 10:56:21,111 INFO 31346 [Timer] /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 47019890ms at 2019-02-22 00:00:01.001
+2019-02-21 10:56:20,953 INFO 31351 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 10:56:20,953 INFO 31351 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 11:02:29,605 INFO 31464 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 11:02:29,605 INFO 31464 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 11:03:06,643 INFO 31488 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 11:03:06,643 INFO 31488 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 11:03:21,349 INFO 31492 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 11:03:21,349 INFO 31492 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 11:04:03,177 INFO 31495 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 11:04:03,177 INFO 31495 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 11:05:21,276 INFO 31508 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 11:05:21,276 INFO 31508 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 11:06:14,171 INFO 31536 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 11:06:14,171 INFO 31536 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 11:06:34,376 INFO 31539 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 11:06:34,376 INFO 31539 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 11:06:41,101 INFO 31541 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 11:06:41,101 INFO 31541 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 11:07:50,039 INFO 31553 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 11:07:50,039 INFO 31553 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 13:53:00,076 INFO 32235 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 13:53:00,076 INFO 32235 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 13:53:01,177 INFO 32230 [Timer] /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 36418826ms at 2019-02-22 00:00:00.003
+2019-02-21 13:53:01,178 INFO 32230 [Timer] /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 36419822ms at 2019-02-22 00:00:01.000
+2019-02-21 14:00:41,487 INFO 32357 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:00:41,487 INFO 32357 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 14:06:33,833 INFO 32462 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:06:33,833 INFO 32462 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 14:18:17,406 INFO 32647 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:18:17,406 INFO 32647 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 14:18:18,160 INFO 32642 [Timer] /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 34901844ms at 2019-02-22 00:00:00.004
+2019-02-21 14:18:18,160 INFO 32642 [Timer] /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 34902840ms at 2019-02-22 00:00:01.000
+2019-02-21 14:22:35,996 INFO 32735 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:22:35,996 INFO 32735 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 14:31:20,253 INFO 32893 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:31:20,253 INFO 32893 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 14:32:28,461 INFO 32903 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:32:28,461 INFO 32903 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 14:32:32,389 INFO 32905 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:32:32,389 INFO 32905 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 14:33:15,225 INFO 32910 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:33:15,225 INFO 32910 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 14:33:21,023 INFO 32913 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:33:21,023 INFO 32913 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 14:34:35,285 INFO 32967 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:34:35,285 INFO 32967 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-21 14:39:29,244 INFO 33050 [Timer] /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 33630761ms at 2019-02-22 00:00:00.005
+2019-02-21 14:39:29,244 INFO 33050 [Timer] /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 33631756ms at 2019-02-22 00:00:01.000
+2019-02-21 14:39:28,936 INFO 33055 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-21 14:39:28,936 INFO 33055 [egg-schedule]: register schedule /Users/baibangyi/car-shop/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
