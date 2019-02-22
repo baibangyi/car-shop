@@ -13,6 +13,8 @@ export default function createStore(initState = {}) {
   const state = {
     articleList: [],
     article: {},
+    car: [],
+    carList: [],
     ...initState
   };
 

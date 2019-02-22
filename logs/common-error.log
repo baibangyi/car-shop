@@ -389,3 +389,198 @@ name: "unhandledRejectionError"
 pid: 33055
 hostname: baibangyideMacBook-Pro.local
 
+2019-02-22 11:03:33,285 ERROR 37115 [app.js] server render bundle error, try client render, the server render error ReferenceError: SET_CAR_LIST is not defined
+    at eval (webpack:///./app/web/page/app/store/mutations.js?:14:4)
+    at Module../app/web/page/app/store/mutations.js (__vue_ssr_bundle__:287:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at eval (webpack:///./app/web/page/app/store/index.js?:9:68)
+    at Module../app/web/page/app/store/index.js (__vue_ssr_bundle__:263:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at eval (webpack:///./app/web/page/app/index.js?:4:64)
+    at Module../app/web/page/app/index.js (__vue_ssr_bundle__:191:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at __vue_ssr_bundle__:84:18
+2019-02-22 11:04:03,325 ERROR 37115 [app.js] server render bundle error, try client render, the server render error ReferenceError: SET_CAR_LIST is not defined
+    at eval (webpack:///./app/web/page/app/store/mutations.js?:14:4)
+    at Module../app/web/page/app/store/mutations.js (__vue_ssr_bundle__:287:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at eval (webpack:///./app/web/page/app/store/index.js?:9:68)
+    at Module../app/web/page/app/store/index.js (__vue_ssr_bundle__:263:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at eval (webpack:///./app/web/page/app/index.js?:4:64)
+    at Module../app/web/page/app/index.js (__vue_ssr_bundle__:191:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at __vue_ssr_bundle__:84:18
+2019-02-22 11:05:12,455 ERROR 37115 nodejs.unhandledRejectionError: Request failed with status code 404
+    at createError (/Users/baibangyi/car-shop/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/baibangyi/car-shop/node_modules/axios/lib/core/settle.js:18:12)
+    at IncomingMessage.handleStreamEnd (/Users/baibangyi/car-shop/node_modules/axios/lib/adapters/http.js:192:11)
+    at IncomingMessage.emit (events.js:187:15)
+    at endReadableNT (_stream_readable.js:1094:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+config: {"transformRequest":{},"transformResponse":{},"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/0.17.1"},"method":"get","url":"http://127.0.0.1:7001/api/article/list"}
+request: {"_events":{},"_eventsCount":6,"output":[],"outputEncodings":[],"outputCallbacks":[],"outputSize":0,"writable":true,"_last":true,"chunkedEncoding":false,"shouldKeepAlive":false,"useChunkedEncodingByDefault":false,"sendDate":false,"_removedConnection":false,"_removedContLen":false,"_removedTE":false,"_contentLength":0,"_hasBody":true,"_trailer":"","finished":true,"_headerSent":true,"socket":{"connecting":false,"_hadError":false,"_handle":{"reading":true,"onconnection":null},"_parent":null,"_host":null,"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":false,"endEmitted":false,"reading":true,"sync":false,"needReadable":true,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"emitClose":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"_events":{"close":[null,null]},"_eventsCount":7,"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":true,"needDrain":false,"ending":true,"ended":true,"finished":false,"destroyed":false,"decodeStrings":false,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":false,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":1,"prefinished":false,"errorEmitted":false,"emitClose":false,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":false,"allowHalfOpen":false,"_sockname":null,"_pendingData":null,"_pendingEncoding":"","server":null,"_server":null,"parser":null,"_httpMessage":"~"},"connection":"~socket","_header":"GET /api/article/list HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.17.1\r\nHost: 127.0.0.1:7001\r\nConnection: close\r\n\r\n","agent":{"_events":{},"_eventsCount":1,"defaultPort":80,"protocol":"http:","options":{"path":null},"requests":{},"sockets":{"127.0.0.1:7001:":["~socket"]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256},"method":"GET","path":"/api/article/list","_ended":true,"res":{"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":true,"endEmitted":true,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"emitClose":true,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":true,"decoder":null,"encoding":null},"readable":false,"_events":{"end":[null,null]},"_eventsCount":3,"socket":"~socket","connection":"~socket","httpVersionMajor":1,"httpVersionMinor":1,"httpVersion":"1.1","complete":true,"headers":{"vary":"Origin","x-response-time":"1","x-frame-options":"SAMEORIGIN","x-xss-protection":"1; mode=block","x-content-type-options":"nosniff","x-download-options":"noopen","content-type":"application/json; charset=utf-8","x-readtime":"21","content-length":"23","date":"Fri, 22 Feb 2019 03:05:12 GMT","connection":"close"},"rawHeaders":["Vary","Origin","X-Response-Time","1","x-frame-options","SAMEORIGIN","x-xss-protection","1; mode=block","x-content-type-options","nosniff","x-download-options","noopen","content-type","application/json; charset=utf-8","x-readtime","21","content-length","23","Date","Fri, 22 Feb 2019 03:05:12 GMT","Connection","close"],"trailers":{},"rawTrailers":[],"aborted":false,"upgrade":false,"url":"","method":null,"statusCode":404,"statusMessage":"Not Found","client":"~socket","_consuming":false,"_dumped":false,"req":"~","responseUrl":"http://127.0.0.1:7001/api/article/list","redirects":[]},"timeoutCb":null,"upgradeOrConnect":false,"parser":null,"maxHeadersCount":null,"_redirectable":{"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":false,"decodeStrings":true,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":true,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":0,"prefinished":false,"errorEmitted":false,"emitClose":true,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":true,"_events":{},"_eventsCount":2,"_options":{"maxRedirects":21,"maxBodyLength":10485760,"protocol":"http:","hostname":"127.0.0.1","port":"7001","path":"/api/article/list","method":"get","headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/0.17.1"},"nativeProtocols":{"http:":{"METHODS":["ACL","BIND","CHECKOUT","CONNECT","COPY","DELETE","GET","HEAD","LINK","LOCK","M-SEARCH","MERGE","MKACTIVITY","MKCALENDAR","MKCOL","MOVE","NOTIFY","OPTIONS","PATCH","POST","PROPFIND","PROPPATCH","PURGE","PUT","REBIND","REPORT","SEARCH","SOURCE","SUBSCRIBE","TRACE","UNBIND","UNLINK","UNLOCK","UNSUBSCRIBE"],"STATUS_CODES":{"100":"Continue","101":"Switching Protocols","102":"Processing","103":"Early Hints","200":"OK","201":"Created","202":"Accepted","203":"Non-Authoritative Information","204":"No Content","205":"Reset Content","206":"Partial Content","207":"Multi-Status","208":"Already Reported","226":"IM Used","300":"Multiple Choices","301":"Moved Permanently","302":"Found","303":"See Other","304":"Not Modified","305":"Use Proxy","307":"Temporary Redirect","308":"Permanent Redirect","400":"Bad Request","401":"Unauthorized","402":"Payment Required","403":"Forbidden","404":"Not Found","405":"Method Not Allowed","406":"Not Acceptable","407":"Proxy Authentication Required","408":"Request Timeout","409":"Conflict","410":"Gone","411":"Length Required","412":"Precondition Failed","413":"Payload Too Large","414":"URI Too Long","415":"Unsupported Media Type","416":"Range Not Satisfiable","417":"Expectation Failed","418":"I'm a Teapot","421":"Misdirected Request","422":"Unprocessable Entity","423":"Locked","424":"Failed Dependency","425":"Unordered Collection","426":"Upgrade Required","428":"Precondition Required","429":"Too Many Requests","431":"Request Header Fields Too Large","451":"Unavailable For Legal Reasons","500":"Internal Server Error","501":"Not Implemented","502":"Bad Gateway","503":"Service Unavailable","504":"Gateway Timeout","505":"HTTP Version Not Supported","506":"Variant Also Negotiates","507":"Insufficient Storage","508":"Loop Detected","509":"Bandwidth Limit Exceeded","510":"Not Extended","511":"Network Authentication Required"},"globalAgent":"~agent"},"https:":{"globalAgent":{"_events":{},"_eventsCount":1,"defaultPort":443,"protocol":"https:","options":{"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}}},"pathname":"/api/article/list"},"_ended":true,"_ending":true,"_redirectCount":0,"_redirects":"~res~redirects","_requestBodyLength":0,"_requestBodyBuffers":[],"_currentRequest":"~","_currentUrl":"http://127.0.0.1:7001/api/article/list"}}
+response: {"status":404,"statusText":"Not Found","headers":{"vary":"Origin","x-response-time":"1","x-frame-options":"SAMEORIGIN","x-xss-protection":"1; mode=block","x-content-type-options":"nosniff","x-download-options":"noopen","content-type":"application/json; charset=utf-8","x-readtime":"21","content-length":"23","date":"Fri, 22 Feb 2019 03:05:12 GMT","connection":"close"},"config":{"transformRequest":{},"transformResponse":{},"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/0.17.1"},"method":"get","url":"http://127.0.0.1:7001/api/article/list"},"request":{"_events":{},"_eventsCount":6,"output":[],"outputEncodings":[],"outputCallbacks":[],"outputSize":0,"writable":true,"_last":true,"chunkedEncoding":false,"shouldKeepAlive":false,"useChunkedEncodingByDefault":false,"sendDate":false,"_removedConnection":false,"_removedContLen":false,"_removedTE":false,"_contentLength":0,"_hasBody":true,"_trailer":"","finished":true,"_headerSent":true,"socket":{"connecting":false,"_hadError":false,"_handle":{"reading":true,"onconnection":null},"_parent":null,"_host":null,"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":false,"endEmitted":false,"reading":true,"sync":false,"needReadable":true,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"emitClose":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"_events":{"close":[null,null]},"_eventsCount":7,"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":true,"needDrain":false,"ending":true,"ended":true,"finished":false,"destroyed":false,"decodeStrings":false,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":false,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":1,"prefinished":false,"errorEmitted":false,"emitClose":false,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":false,"allowHalfOpen":false,"_sockname":null,"_pendingData":null,"_pendingEncoding":"","server":null,"_server":null,"parser":null,"_httpMessage":"~request"},"connection":"~request~socket","_header":"GET /api/article/list HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.17.1\r\nHost: 127.0.0.1:7001\r\nConnection: close\r\n\r\n","agent":{"_events":{},"_eventsCount":1,"defaultPort":80,"protocol":"http:","options":{"path":null},"requests":{},"sockets":{"127.0.0.1:7001:":["~request~socket"]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256},"method":"GET","path":"/api/article/list","_ended":true,"res":{"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":true,"endEmitted":true,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"emitClose":true,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":true,"decoder":null,"encoding":null},"readable":false,"_events":{"end":[null,null]},"_eventsCount":3,"socket":"~request~socket","connection":"~request~socket","httpVersionMajor":1,"httpVersionMinor":1,"httpVersion":"1.1","complete":true,"headers":"~headers","rawHeaders":["Vary","Origin","X-Response-Time","1","x-frame-options","SAMEORIGIN","x-xss-protection","1; mode=block","x-content-type-options","nosniff","x-download-options","noopen","content-type","application/json; charset=utf-8","x-readtime","21","content-length","23","Date","Fri, 22 Feb 2019 03:05:12 GMT","Connection","close"],"trailers":{},"rawTrailers":[],"aborted":false,"upgrade":false,"url":"","method":null,"statusCode":404,"statusMessage":"Not Found","client":"~request~socket","_consuming":false,"_dumped":false,"req":"~request","responseUrl":"http://127.0.0.1:7001/api/article/list","redirects":[]},"timeoutCb":null,"upgradeOrConnect":false,"parser":null,"maxHeadersCount":null,"_redirectable":{"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":false,"decodeStrings":true,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":true,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":0,"prefinished":false,"errorEmitted":false,"emitClose":true,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":true,"_events":{},"_eventsCount":2,"_options":{"maxRedirects":21,"maxBodyLength":10485760,"protocol":"http:","hostname":"127.0.0.1","port":"7001","path":"/api/article/list","method":"get","headers":"~config~headers","nativeProtocols":{"http:":{"METHODS":["ACL","BIND","CHECKOUT","CONNECT","COPY","DELETE","GET","HEAD","LINK","LOCK","M-SEARCH","MERGE","MKACTIVITY","MKCALENDAR","MKCOL","MOVE","NOTIFY","OPTIONS","PATCH","POST","PROPFIND","PROPPATCH","PURGE","PUT","REBIND","REPORT","SEARCH","SOURCE","SUBSCRIBE","TRACE","UNBIND","UNLINK","UNLOCK","UNSUBSCRIBE"],"STATUS_CODES":{"100":"Continue","101":"Switching Protocols","102":"Processing","103":"Early Hints","200":"OK","201":"Created","202":"Accepted","203":"Non-Authoritative Information","204":"No Content","205":"Reset Content","206":"Partial Content","207":"Multi-Status","208":"Already Reported","226":"IM Used","300":"Multiple Choices","301":"Moved Permanently","302":"Found","303":"See Other","304":"Not Modified","305":"Use Proxy","307":"Temporary Redirect","308":"Permanent Redirect","400":"Bad Request","401":"Unauthorized","402":"Payment Required","403":"Forbidden","404":"Not Found","405":"Method Not Allowed","406":"Not Acceptable","407":"Proxy Authentication Required","408":"Request Timeout","409":"Conflict","410":"Gone","411":"Length Required","412":"Precondition Failed","413":"Payload Too Large","414":"URI Too Long","415":"Unsupported Media Type","416":"Range Not Satisfiable","417":"Expectation Failed","418":"I'm a Teapot","421":"Misdirected Request","422":"Unprocessable Entity","423":"Locked","424":"Failed Dependency","425":"Unordered Collection","426":"Upgrade Required","428":"Precondition Required","429":"Too Many Requests","431":"Request Header Fields Too Large","451":"Unavailable For Legal Reasons","500":"Internal Server Error","501":"Not Implemented","502":"Bad Gateway","503":"Service Unavailable","504":"Gateway Timeout","505":"HTTP Version Not Supported","506":"Variant Also Negotiates","507":"Insufficient Storage","508":"Loop Detected","509":"Bandwidth Limit Exceeded","510":"Not Extended","511":"Network Authentication Required"},"globalAgent":"~request~agent"},"https:":{"globalAgent":{"_events":{},"_eventsCount":1,"defaultPort":443,"protocol":"https:","options":{"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}}},"pathname":"/api/article/list"},"_ended":true,"_ending":true,"_redirectCount":0,"_redirects":"~request~res~redirects","_requestBodyLength":0,"_requestBodyBuffers":[],"_currentRequest":"~request","_currentUrl":"http://127.0.0.1:7001/api/article/list"}},"data":{"message":"Not Found"}}
+name: "unhandledRejectionError"
+pid: 37115
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 11:12:11,987 ERROR 37277 [-/172.24.18.241/-/13ms GET /api/car/list] nodejs.TypeError: Cannot read property 'getCarList' of undefined
+    at CarController.getCarList (/Users/baibangyi/car-shop/app/controller/car.js:11:36)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at Object.<anonymous> (/Users/baibangyi/car-shop/app/middleware/access.js:9:5)
+    at Generator.next (<anonymous>)
+
+pid: 37277
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 11:12:38,534 ERROR 37277 [-/172.24.18.241/-/1ms GET /api/car/list] nodejs.TypeError: Cannot read property 'getCarList' of undefined
+    at CarController.getCarList (/Users/baibangyi/car-shop/app/controller/car.js:11:36)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at Object.<anonymous> (/Users/baibangyi/car-shop/app/middleware/access.js:9:5)
+    at Generator.next (<anonymous>)
+
+pid: 37277
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 11:43:15,136 ERROR 37596 nodejs.unhandledRejectionError: connect ECONNREFUSED 127.0.0.1:7001
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1117:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 7001
+config: {"transformRequest":{},"transformResponse":{},"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/0.17.1"},"method":"get","url":"http://127.0.0.1:7001/api/article/list"}
+request: {"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":false,"decodeStrings":true,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":true,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":0,"prefinished":false,"errorEmitted":false,"emitClose":true,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":true,"_events":{},"_eventsCount":2,"_options":{"maxRedirects":21,"maxBodyLength":10485760,"protocol":"http:","hostname":"127.0.0.1","port":"7001","path":"/api/article/list","method":"get","headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/0.17.1"},"nativeProtocols":{"http:":{"METHODS":["ACL","BIND","CHECKOUT","CONNECT","COPY","DELETE","GET","HEAD","LINK","LOCK","M-SEARCH","MERGE","MKACTIVITY","MKCALENDAR","MKCOL","MOVE","NOTIFY","OPTIONS","PATCH","POST","PROPFIND","PROPPATCH","PURGE","PUT","REBIND","REPORT","SEARCH","SOURCE","SUBSCRIBE","TRACE","UNBIND","UNLINK","UNLOCK","UNSUBSCRIBE"],"STATUS_CODES":{"100":"Continue","101":"Switching Protocols","102":"Processing","103":"Early Hints","200":"OK","201":"Created","202":"Accepted","203":"Non-Authoritative Information","204":"No Content","205":"Reset Content","206":"Partial Content","207":"Multi-Status","208":"Already Reported","226":"IM Used","300":"Multiple Choices","301":"Moved Permanently","302":"Found","303":"See Other","304":"Not Modified","305":"Use Proxy","307":"Temporary Redirect","308":"Permanent Redirect","400":"Bad Request","401":"Unauthorized","402":"Payment Required","403":"Forbidden","404":"Not Found","405":"Method Not Allowed","406":"Not Acceptable","407":"Proxy Authentication Required","408":"Request Timeout","409":"Conflict","410":"Gone","411":"Length Required","412":"Precondition Failed","413":"Payload Too Large","414":"URI Too Long","415":"Unsupported Media Type","416":"Range Not Satisfiable","417":"Expectation Failed","418":"I'm a Teapot","421":"Misdirected Request","422":"Unprocessable Entity","423":"Locked","424":"Failed Dependency","425":"Unordered Collection","426":"Upgrade Required","428":"Precondition Required","429":"Too Many Requests","431":"Request Header Fields Too Large","451":"Unavailable For Legal Reasons","500":"Internal Server Error","501":"Not Implemented","502":"Bad Gateway","503":"Service Unavailable","504":"Gateway Timeout","505":"HTTP Version Not Supported","506":"Variant Also Negotiates","507":"Insufficient Storage","508":"Loop Detected","509":"Bandwidth Limit Exceeded","510":"Not Extended","511":"Network Authentication Required"},"globalAgent":{"_events":{},"_eventsCount":1,"defaultPort":80,"protocol":"http:","options":{"path":null},"requests":{},"sockets":{"127.0.0.1:7001:":[{"connecting":false,"_hadError":true,"_handle":null,"_parent":null,"_host":null,"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":false,"endEmitted":false,"reading":true,"sync":false,"needReadable":true,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"emitClose":false,"destroyed":true,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":false,"_events":{"connect":[null,null,null],"close":[null,null]},"_eventsCount":7,"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":true,"decodeStrings":false,"defaultEncoding":"utf8","length":144,"writing":true,"corked":0,"sync":false,"bufferProcessing":false,"writelen":144,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":1,"prefinished":false,"errorEmitted":true,"emitClose":false,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":false,"allowHalfOpen":false,"_sockname":null,"_pendingData":"GET /api/article/list HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.17.1\r\nHost: 127.0.0.1:7001\r\nConnection: close\r\n\r\n","_pendingEncoding":"latin1","server":null,"_server":null,"parser":null,"_httpMessage":{"_events":{},"_eventsCount":6,"output":[],"outputEncodings":[],"outputCallbacks":[],"outputSize":0,"writable":true,"_last":true,"chunkedEncoding":false,"shouldKeepAlive":false,"useChunkedEncodingByDefault":false,"sendDate":false,"_removedConnection":false,"_removedContLen":false,"_removedTE":false,"_contentLength":0,"_hasBody":true,"_trailer":"","finished":true,"_headerSent":true,"socket":"~_options~nativeProtocols~http:~globalAgent~sockets~127.0.0.1:7001:~0","connection":"~_options~nativeProtocols~http:~globalAgent~sockets~127.0.0.1:7001:~0","_header":"GET /api/article/list HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.17.1\r\nHost: 127.0.0.1:7001\r\nConnection: close\r\n\r\n","agent":"~_options~nativeProtocols~http:~globalAgent","method":"GET","path":"/api/article/list","_ended":false,"res":null,"timeoutCb":null,"upgradeOrConnect":false,"parser":null,"maxHeadersCount":null,"_redirectable":"~"}}]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256}},"https:":{"globalAgent":{"_events":{},"_eventsCount":1,"defaultPort":443,"protocol":"https:","options":{"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}}},"pathname":"/api/article/list"},"_ended":true,"_ending":true,"_redirectCount":0,"_redirects":[],"_requestBodyLength":0,"_requestBodyBuffers":[],"_currentRequest":"~_options~nativeProtocols~http:~globalAgent~sockets~127.0.0.1:7001:~0~_httpMessage","_currentUrl":"http://127.0.0.1:7001/api/article/list"}
+response: undefined
+name: "unhandledRejectionError"
+pid: 37596
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 12:21:32,509 ERROR 37643 nodejs.ClusterClientNoResponseError: client no response in 1960420ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/baibangyi/car-shop/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 37643
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 12:59:05,487 ERROR 37643 nodejs.ClusterClientNoResponseError: client no response in 2212949ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/baibangyi/car-shop/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 37643
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 13:38:45,247 ERROR 37643 nodejs.ClusterClientNoResponseError: client no response in 2339632ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/baibangyi/car-shop/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 37643
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 14:23:33,462 ERROR 37643 nodejs.ClusterClientNoResponseError: client no response in 2668197ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/baibangyi/car-shop/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 37643
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 15:08:26,422 ERROR 37917 [-/127.0.0.1/-/2ms GET /api/car/list] nodejs.TypeError: Cannot read property 'getCarList' of undefined
+    at CarController.getCarList (/Users/baibangyi/car-shop/app/controller/car.js:11:36)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at Object.<anonymous> (/Users/baibangyi/car-shop/app/middleware/access.js:9:5)
+    at Generator.next (<anonymous>)
+
+pid: 37917
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:53:51,173 ERROR 40925 [-/127.0.0.1/-/3ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.ReferenceError: service is not defined
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:17:6)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at Object.<anonymous> (/Users/baibangyi/car-shop/app/middleware/access.js:9:5)
+    at Generator.next (<anonymous>)
+
+pid: 40925
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:30:59,997 ERROR 41239 [-/127.0.0.1/-/2ms POST /api/car/create] nodejs.SyntaxError: Identifier 'model' has already been declared
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:24:36)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at Object.<anonymous> (/Users/baibangyi/car-shop/app/middleware/access.js:9:5)
+    at Generator.next (<anonymous>)
+
+pid: 41239
+hostname: baibangyideMacBook-Pro.local
+

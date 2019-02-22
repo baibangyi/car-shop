@@ -12,5 +12,8 @@ const mutations = {
   [SET_ARTICLE_DETAIL](state, data) {
     state.article = data;
   }
+  // [SET_CAR_LIST](state, data) {
+  //   state.article = data;
+  // }
 };
 export default mutations;

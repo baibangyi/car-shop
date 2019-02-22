@@ -147,3 +147,639 @@ pid: 32967
 hostname: baibangyideMacBook-Pro.local
 
 2019-02-21 14:39:29,167 INFO 33055 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:03:23,747 INFO 37115 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:03:33,285 ERROR 37115 [app.js] server render bundle error, try client render, the server render error ReferenceError: SET_CAR_LIST is not defined
+    at eval (webpack:///./app/web/page/app/store/mutations.js?:14:4)
+    at Module../app/web/page/app/store/mutations.js (__vue_ssr_bundle__:287:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at eval (webpack:///./app/web/page/app/store/index.js?:9:68)
+    at Module../app/web/page/app/store/index.js (__vue_ssr_bundle__:263:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at eval (webpack:///./app/web/page/app/index.js?:4:64)
+    at Module../app/web/page/app/index.js (__vue_ssr_bundle__:191:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at __vue_ssr_bundle__:84:18
+2019-02-22 11:03:33,308 INFO 37115 [-/172.24.18.241/-/124ms GET /] [access] 172.24.18.241: - GET / HTTP/200 894 - 115 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 11:04:03,325 ERROR 37115 [app.js] server render bundle error, try client render, the server render error ReferenceError: SET_CAR_LIST is not defined
+    at eval (webpack:///./app/web/page/app/store/mutations.js?:14:4)
+    at Module../app/web/page/app/store/mutations.js (__vue_ssr_bundle__:287:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at eval (webpack:///./app/web/page/app/store/index.js?:9:68)
+    at Module../app/web/page/app/store/index.js (__vue_ssr_bundle__:263:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at eval (webpack:///./app/web/page/app/index.js?:4:64)
+    at Module../app/web/page/app/index.js (__vue_ssr_bundle__:191:1)
+    at __webpack_require__ (__vue_ssr_bundle__:20:30)
+    at __vue_ssr_bundle__:84:18
+2019-02-22 11:04:03,327 INFO 37115 [-/172.24.18.241/-/35ms GET /common] [access] 172.24.18.241: - GET /common HTTP/200 900 - 35 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 11:04:58,134 INFO 37115 [-/172.24.18.241/-/60ms GET /common] [access] 172.24.18.241: - GET /common HTTP/200 33567 - 60 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 11:05:14,494 INFO 37115 [-/172.24.18.241/-/31ms GET /common] [access] 172.24.18.241: - GET /common HTTP/200 33567 - 30 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 11:07:03,281 INFO 37211 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:07:04,949 INFO 37211 [-/172.24.18.241/-/100ms GET /common] [access] 172.24.18.241: - GET /common HTTP/200 33567 - 91 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 11:07:10,970 INFO 37211 [-/172.24.18.241/-/2ms GET /ping] [access] 172.24.18.241: - GET /ping HTTP/200 18 - 1 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 11:11:44,502 INFO 37277 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:12:11,987 ERROR 37277 [-/172.24.18.241/-/13ms GET /api/car/list] nodejs.TypeError: Cannot read property 'getCarList' of undefined
+    at CarController.getCarList (/Users/baibangyi/car-shop/app/controller/car.js:11:36)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at Object.<anonymous> (/Users/baibangyi/car-shop/app/middleware/access.js:9:5)
+    at Generator.next (<anonymous>)
+
+pid: 37277
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 11:12:26,607 INFO 37277 [-/172.24.18.241/-/112ms GET /car/list] [access] 172.24.18.241: - GET /car/list HTTP/200 33588 - 110 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 11:12:38,534 ERROR 37277 [-/172.24.18.241/-/1ms GET /api/car/list] nodejs.TypeError: Cannot read property 'getCarList' of undefined
+    at CarController.getCarList (/Users/baibangyi/car-shop/app/controller/car.js:11:36)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at Object.<anonymous> (/Users/baibangyi/car-shop/app/middleware/access.js:9:5)
+    at Generator.next (<anonymous>)
+
+pid: 37277
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 11:13:34,314 INFO 37282 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:13:38,247 INFO 37282 [-/172.24.18.241/-/11ms GET /api/car/list] [access] 172.24.18.241: - GET /api/car/list HTTP/200 14 - 3 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 11:13:46,560 INFO 37284 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:26:13,120 INFO 37443 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:27:24,902 INFO 37446 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:39:34,705 INFO 37563 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:41:02,240 INFO 37567 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:41:03,815 INFO 37568 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:42:02,862 INFO 37596 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:44:11,221 INFO 37646 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 11:44:19,484 INFO 37646 [-/127.0.0.1/-/3ms GET /api/article/list] [access] 127.0.0.1: - GET /api/article/list HTTP/200 2815 - 1 - axios/0.17.1
+2019-02-22 11:44:19,509 INFO 37646 [-/172.24.18.241/-/663ms GET /] [access] 172.24.18.241: - GET / HTTP/200 44827 - 569 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 14:27:18,942 INFO 37646 [-/127.0.0.1/-/1ms GET /api/article/list] [access] 127.0.0.1: - GET /api/article/list HTTP/200 2815 - 1 - axios/0.17.1
+2019-02-22 14:27:18,961 INFO 37646 [-/172.24.18.241/-/86ms GET /] [access] 172.24.18.241: - GET / HTTP/200 44827 http://172.24.18.241:7001/ 82 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 14:27:20,614 INFO 37646 [-/127.0.0.1/-/0ms GET /api/article/list] [access] 127.0.0.1: - GET /api/article/list HTTP/200 2815 - 0 - axios/0.17.1
+2019-02-22 14:27:20,625 INFO 37646 [-/172.24.18.241/-/38ms GET /] [access] 172.24.18.241: - GET / HTTP/200 44827 http://172.24.18.241:7001/ 38 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 14:29:00,164 INFO 37917 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 14:29:06,858 INFO 37917 [-/127.0.0.1/-/3ms GET /api/article/list] [access] 127.0.0.1: - GET /api/article/list HTTP/200 2815 - 1 - axios/0.17.1
+2019-02-22 14:29:06,892 INFO 37917 [-/172.24.18.241/-/399ms GET /] [access] 172.24.18.241: - GET / HTTP/200 44827 - 347 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 14:37:23,176 INFO 37917 [-/172.24.18.241/-/56ms GET /] [access] 172.24.18.241: - GET / HTTP/200 33558 - 55 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 15:04:05,399 WARN 37917 [-/127.0.0.1/-/6ms POST /api/car/createCar?carId=001&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-22 15:04:05,406 WARN 37917 [-/127.0.0.1/-/12ms POST /api/car/createCar?carId=001&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/baibangyi/car-shop/node_modules/egg-security/app/extend/context.js:148:17)
+    at csrf (/Users/baibangyi/car-shop/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/baibangyi/car-shop/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/baibangyi/car-shop/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/baibangyi/car-shop/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "missing csrf token"
+pid: 37917
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 15:08:26,422 ERROR 37917 [-/127.0.0.1/-/2ms GET /api/car/list] nodejs.TypeError: Cannot read property 'getCarList' of undefined
+    at CarController.getCarList (/Users/baibangyi/car-shop/app/controller/car.js:11:36)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at Object.<anonymous> (/Users/baibangyi/car-shop/app/middleware/access.js:9:5)
+    at Generator.next (<anonymous>)
+
+pid: 37917
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 15:08:44,953 INFO 37917 [-/127.0.0.1/-/68ms GET /] [access] 127.0.0.1: - GET / HTTP/200 30757 - 67 - PostmanRuntime/7.6.0
+2019-02-22 15:11:08,309 INFO 37917 [-/127.0.0.1/-/0ms GET /api/article/list] [access] 127.0.0.1: - GET /api/article/list HTTP/200 2815 - 0 - PostmanRuntime/7.6.0
+2019-02-22 15:13:49,134 INFO 39649 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 15:29:57,663 INFO 39828 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 15:30:52,416 INFO 39830 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 15:35:34,454 INFO 39897 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 15:37:01,806 INFO 39901 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 15:41:04,643 INFO 39951 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 15:41:27,512 INFO 39952 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:01:19,150 INFO 40308 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:01:26,266 INFO 40308 [-/172.24.18.241/-/197ms GET /] [access] 172.24.18.241: - GET / HTTP/200 30757 - 180 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 16:04:19,399 INFO 40384 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:06:00,014 INFO 40411 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:10:49,616 INFO 40452 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:13:29,928 INFO 40488 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:17:02,888 INFO 40545 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:17:14,732 INFO 40546 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:21:14,761 INFO 40546 [-/127.0.0.1/-/13ms GET /ping] [access] 127.0.0.1: - GET /ping HTTP/200 18 - 3 - PostmanRuntime/7.6.0
+2019-02-22 16:22:25,528 INFO 40574 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:23:45,914 INFO 40602 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:24:04,556 INFO 40603 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:24:42,457 WARN 40603 [-/127.0.0.1/-/7ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=2%E7%B3%BB] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-22 16:24:42,460 WARN 40603 [-/127.0.0.1/-/10ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=2%E7%B3%BB] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/baibangyi/car-shop/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/Users/baibangyi/car-shop/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/baibangyi/car-shop/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/baibangyi/car-shop/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/baibangyi/car-shop/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 40603
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:25:55,730 WARN 40603 [-/127.0.0.1/-/1ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&carModel=2%E7%B3%BB] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-22 16:25:55,730 WARN 40603 [-/127.0.0.1/-/1ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&carModel=2%E7%B3%BB] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/baibangyi/car-shop/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/Users/baibangyi/car-shop/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/baibangyi/car-shop/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/baibangyi/car-shop/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/baibangyi/car-shop/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 40603
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:27:04,936 INFO 40603 [-/127.0.0.1/-/93ms GET /api/car/list?currentPage=1&pageSize=20] [access] 127.0.0.1: - GET /api/car/list?currentPage=1&pageSize=20 HTTP/404 - - 88 - PostmanRuntime/7.6.0
+2019-02-22 16:28:01,763 WARN 40603 [-/127.0.0.1/-/0ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-22 16:28:01,764 WARN 40603 [-/127.0.0.1/-/1ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/baibangyi/car-shop/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/Users/baibangyi/car-shop/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/baibangyi/car-shop/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/baibangyi/car-shop/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/baibangyi/car-shop/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 40603
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:29:28,425 WARN 40603 [-/127.0.0.1/-/0ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-22 16:29:28,425 WARN 40603 [-/127.0.0.1/-/0ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/baibangyi/car-shop/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/Users/baibangyi/car-shop/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/baibangyi/car-shop/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/baibangyi/car-shop/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/baibangyi/car-shop/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 40603
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:52:14,909 WARN 40603 [-/127.0.0.1/-/3ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-22 16:52:14,911 WARN 40603 [-/127.0.0.1/-/5ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/baibangyi/car-shop/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/Users/baibangyi/car-shop/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/baibangyi/car-shop/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/baibangyi/car-shop/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/baibangyi/car-shop/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 40603
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:52:35,867 WARN 40603 [-/127.0.0.1/-/0ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-22 16:52:35,867 WARN 40603 [-/127.0.0.1/-/1ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/baibangyi/car-shop/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/Users/baibangyi/car-shop/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/baibangyi/car-shop/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/baibangyi/car-shop/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/baibangyi/car-shop/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/baibangyi/car-shop/node_modules/koa-bodyparser/index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 40603
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:53:35,626 INFO 40925 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:53:44,000 INFO 40925 [-/172.24.18.241/-/496ms GET /] [access] 172.24.18.241: - GET / HTTP/200 30711 - 484 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+2019-02-22 16:53:51,173 ERROR 40925 [-/127.0.0.1/-/3ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.ReferenceError: service is not defined
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:17:6)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at Object.<anonymous> (/Users/baibangyi/car-shop/app/middleware/access.js:9:5)
+    at Generator.next (<anonymous>)
+
+pid: 40925
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:54:46,755 INFO 40974 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:54:47,863 WARN 40974 [-/127.0.0.1/-/13ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:20:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"carId","code":"missing_field"},{"message":"required","field":"manufacturers","code":"missing_field"},{"message":"required","field":"model","code":"missing_field"}]
+pid: 40974
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:55:14,524 INFO 40975 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:55:18,276 WARN 40975 [-/127.0.0.1/-/12ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:20:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"id","code":"missing_field"},{"message":"required","field":"manufacturers","code":"missing_field"},{"message":"required","field":"model","code":"missing_field"}]
+pid: 40975
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:56:09,360 INFO 40999 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 16:57:44,801 WARN 40999 [-/127.0.0.1/-/14ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:18:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"id","code":"missing_field"},{"message":"required","field":"manufacturers","code":"missing_field"},{"message":"required","field":"model","code":"missing_field"}]
+pid: 40999
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 16:57:45,257 INFO 41011 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:01:55,417 WARN 41011 [-/127.0.0.1/-/13ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&carModel=3%E7%B3%BB] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:18:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"id","code":"missing_field"},{"message":"required","field":"manufacturers","code":"missing_field"},{"message":"required","field":"carModel","code":"missing_field"}]
+pid: 41011
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:06:34,807 INFO 41092 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:06:44,936 INFO 41095 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:07:03,137 WARN 41095 [-/127.0.0.1/-/14ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:18:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"id","code":"missing_field"},{"message":"required","field":"manufacturers","code":"missing_field"},{"message":"required","field":"model","code":"missing_field"}]
+pid: 41095
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:07:50,532 WARN 41095 [-/127.0.0.1/-/1ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:18:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"id","code":"missing_field"},{"message":"required","field":"manufacturers","code":"missing_field"},{"message":"required","field":"model","code":"missing_field"}]
+pid: 41095
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:07:51,252 INFO 41096 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:08:12,117 WARN 41096 [-/127.0.0.1/-/14ms POST /api/car/create?id=1&manufacturers=%E5%AE%9D%E9%A9%AC&model=3%E7%B3%BB] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:19:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"id","code":"missing_field"},{"message":"required","field":"manufacturers","code":"missing_field"},{"message":"required","field":"model","code":"missing_field"}]
+pid: 41096
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:10:39,471 INFO 41120 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:16:41,703 WARN 41120 [-/127.0.0.1/-/15ms POST /api/car/create] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:18:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"id","code":"missing_field"},{"message":"required","field":"manufacturers","code":"missing_field"},{"message":"required","field":"model","code":"missing_field"}]
+pid: 41120
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:18:06,958 WARN 41120 [-/127.0.0.1/-/23ms POST /api/car/create] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:18:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a number","code":"invalid","field":"id"}]
+pid: 41120
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:18:57,491 WARN 41120 [-/127.0.0.1/-/1ms POST /api/car/create] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:18:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a number","code":"invalid","field":"id"}]
+pid: 41120
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:21:03,541 WARN 41120 [-/127.0.0.1/-/1ms POST /api/car/create] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:18:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a number","code":"invalid","field":"id"}]
+pid: 41120
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:21:49,713 INFO 41239 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:21:53,467 WARN 41239 [-/127.0.0.1/-/40ms POST /api/car/create] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:19:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a number","code":"invalid","field":"id"}]
+pid: 41239
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:26:39,128 WARN 41239 [-/127.0.0.1/-/3ms POST /api/car/create] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/baibangyi/car-shop/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/baibangyi/car-shop/node_modules/egg-validate/app/extend/context.js:14:17)
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:19:9)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a number","code":"invalid","field":"id"}]
+pid: 41239
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:30:59,997 ERROR 41239 [-/127.0.0.1/-/2ms POST /api/car/create] nodejs.SyntaxError: Identifier 'model' has already been declared
+    at CarController.createCar (/Users/baibangyi/car-shop/app/controller/car.js:24:36)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/baibangyi/car-shop/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:45:18)
+    at /Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa-compose/index.js:44:32)
+    at /Users/baibangyi/car-shop/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/baibangyi/car-shop/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/baibangyi/car-shop/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at createGenerator (/Users/baibangyi/car-shop/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at Object.<anonymous> (/Users/baibangyi/car-shop/app/middleware/access.js:9:5)
+    at Generator.next (<anonymous>)
+
+pid: 41239
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:31:53,642 INFO 41324 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:32:23,200 INFO 41352 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:32:28,193 INFO 41356 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:32:53,256 INFO 41358 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:32:55,887 INFO 41361 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:32:58,846 INFO 41361 [-/127.0.0.1/-/78ms POST /api/car/create] [access] 127.0.0.1: - POST /api/car/create HTTP/204 - - 41 - PostmanRuntime/7.6.0
+2019-02-22 17:35:22,621 WARN 41361 [-/127.0.0.1/-/3ms POST /api/car/create] nodejs.SyntaxError: Unexpected token } in JSON at position 147
+    at JSON.parse (<anonymous>)
+    at parse (/Users/baibangyi/car-shop/node_modules/co-body/lib/json.js:57:17)
+    at AsyncFunction.module.exports [as json] (/Users/baibangyi/car-shop/node_modules/co-body/lib/json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "{\n\t\"id\": 1,\n\t\"manufacturers\": \"宝马\",\n\t\"carmodel\": \"3系\",\n\t\"owner_price\": \"29万\",\n\t\"color\": \"黑色\",\n\t\"owner_name\": \"bby\",\n\t\"owner_tpl\": \"17612310496\",\n\t\n}"
+pid: 41361
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 17:36:13,972 INFO 41394 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:36:23,763 INFO 41394 [-/127.0.0.1/-/84ms POST /api/car/create] [access] 127.0.0.1: - POST /api/car/create HTTP/200 211 - 53 - PostmanRuntime/7.6.0
+2019-02-22 17:40:03,507 INFO 41429 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:40:43,824 INFO 41434 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs
+2019-02-22 17:40:53,489 INFO 41436 [egg-logview] mount log /Users/baibangyi/car-shop/logs at http://127.0.0.1:7001/__logs

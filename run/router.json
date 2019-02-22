@@ -6,6 +6,56 @@
       "GET"
     ],
     "paramNames": [],
+    "path": "/api/car/list",
+    "regexp": "/^\\/api\\/car\\/list(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/car/create",
+    "regexp": "/^\\/api\\/car\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/car/update",
+    "regexp": "/^\\/api\\/car\\/update(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/ping",
+    "regexp": "/^\\/ping(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
     "path": "/api/article/list",
     "regexp": "/^\\/api\\/article\\/list(?:\\/(?=$))?$/",
     "stack": [

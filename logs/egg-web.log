@@ -622,3 +622,898 @@ name: "unhandledRejectionError"
 pid: 33055
 hostname: baibangyideMacBook-Pro.local
 
+2019-02-22 11:03:22,754 INFO 37115 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:03:22,787 INFO 37115 [egg-multipart] stream mode enable
+2019-02-22 11:03:23,612 INFO 37115 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:03:23,738 INFO 37115 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:03:23,741 INFO 37115 [egg-security] use csrf middleware
+2019-02-22 11:03:23,742 INFO 37115 [egg-security] use methodnoallow middleware
+2019-02-22 11:03:23,743 INFO 37115 [egg-security] use noopen middleware
+2019-02-22 11:03:23,744 INFO 37115 [egg-security] use nosniff middleware
+2019-02-22 11:03:23,745 INFO 37115 [egg-security] use xssProtection middleware
+2019-02-22 11:03:23,745 INFO 37115 [egg-security] use xframe middleware
+2019-02-22 11:03:23,746 INFO 37115 [egg-security] use dta middleware
+2019-02-22 11:03:23,746 INFO 37115 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:03:23,775 INFO 37115 [egg:core] dump config after load, 13ms
+2019-02-22 11:03:23,778 INFO 37115 [egg-mongoose] starting...
+2019-02-22 11:03:23,806 INFO 37115 [egg-watcher:application] watcher start success
+2019-02-22 11:03:23,846 INFO 37115 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:03:23,854 INFO 37115 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:03:23,866 INFO 37115 [egg:core] dump config after ready, 9ms
+2019-02-22 11:05:12,456 ERROR 37115 nodejs.unhandledRejectionError: Request failed with status code 404
+    at createError (/Users/baibangyi/car-shop/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/baibangyi/car-shop/node_modules/axios/lib/core/settle.js:18:12)
+    at IncomingMessage.handleStreamEnd (/Users/baibangyi/car-shop/node_modules/axios/lib/adapters/http.js:192:11)
+    at IncomingMessage.emit (events.js:187:15)
+    at endReadableNT (_stream_readable.js:1094:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+config: {"transformRequest":{},"transformResponse":{},"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/0.17.1"},"method":"get","url":"http://127.0.0.1:7001/api/article/list"}
+request: {"_events":{},"_eventsCount":6,"output":[],"outputEncodings":[],"outputCallbacks":[],"outputSize":0,"writable":true,"_last":true,"chunkedEncoding":false,"shouldKeepAlive":false,"useChunkedEncodingByDefault":false,"sendDate":false,"_removedConnection":false,"_removedContLen":false,"_removedTE":false,"_contentLength":0,"_hasBody":true,"_trailer":"","finished":true,"_headerSent":true,"socket":{"connecting":false,"_hadError":false,"_handle":{"reading":true,"onconnection":null},"_parent":null,"_host":null,"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":false,"endEmitted":false,"reading":true,"sync":false,"needReadable":true,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"emitClose":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"_events":{"close":[null,null]},"_eventsCount":7,"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":true,"needDrain":false,"ending":true,"ended":true,"finished":false,"destroyed":false,"decodeStrings":false,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":false,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":1,"prefinished":false,"errorEmitted":false,"emitClose":false,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":false,"allowHalfOpen":false,"_sockname":null,"_pendingData":null,"_pendingEncoding":"","server":null,"_server":null,"parser":null,"_httpMessage":"~"},"connection":"~socket","_header":"GET /api/article/list HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.17.1\r\nHost: 127.0.0.1:7001\r\nConnection: close\r\n\r\n","agent":{"_events":{},"_eventsCount":1,"defaultPort":80,"protocol":"http:","options":{"path":null},"requests":{},"sockets":{"127.0.0.1:7001:":["~socket"]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256},"method":"GET","path":"/api/article/list","_ended":true,"res":{"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":true,"endEmitted":true,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"emitClose":true,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":true,"decoder":null,"encoding":null},"readable":false,"_events":{"end":[null,null]},"_eventsCount":3,"socket":"~socket","connection":"~socket","httpVersionMajor":1,"httpVersionMinor":1,"httpVersion":"1.1","complete":true,"headers":{"vary":"Origin","x-response-time":"1","x-frame-options":"SAMEORIGIN","x-xss-protection":"1; mode=block","x-content-type-options":"nosniff","x-download-options":"noopen","content-type":"application/json; charset=utf-8","x-readtime":"21","content-length":"23","date":"Fri, 22 Feb 2019 03:05:12 GMT","connection":"close"},"rawHeaders":["Vary","Origin","X-Response-Time","1","x-frame-options","SAMEORIGIN","x-xss-protection","1; mode=block","x-content-type-options","nosniff","x-download-options","noopen","content-type","application/json; charset=utf-8","x-readtime","21","content-length","23","Date","Fri, 22 Feb 2019 03:05:12 GMT","Connection","close"],"trailers":{},"rawTrailers":[],"aborted":false,"upgrade":false,"url":"","method":null,"statusCode":404,"statusMessage":"Not Found","client":"~socket","_consuming":false,"_dumped":false,"req":"~","responseUrl":"http://127.0.0.1:7001/api/article/list","redirects":[]},"timeoutCb":null,"upgradeOrConnect":false,"parser":null,"maxHeadersCount":null,"_redirectable":{"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":false,"decodeStrings":true,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":true,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":0,"prefinished":false,"errorEmitted":false,"emitClose":true,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":true,"_events":{},"_eventsCount":2,"_options":{"maxRedirects":21,"maxBodyLength":10485760,"protocol":"http:","hostname":"127.0.0.1","port":"7001","path":"/api/article/list","method":"get","headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/0.17.1"},"nativeProtocols":{"http:":{"METHODS":["ACL","BIND","CHECKOUT","CONNECT","COPY","DELETE","GET","HEAD","LINK","LOCK","M-SEARCH","MERGE","MKACTIVITY","MKCALENDAR","MKCOL","MOVE","NOTIFY","OPTIONS","PATCH","POST","PROPFIND","PROPPATCH","PURGE","PUT","REBIND","REPORT","SEARCH","SOURCE","SUBSCRIBE","TRACE","UNBIND","UNLINK","UNLOCK","UNSUBSCRIBE"],"STATUS_CODES":{"100":"Continue","101":"Switching Protocols","102":"Processing","103":"Early Hints","200":"OK","201":"Created","202":"Accepted","203":"Non-Authoritative Information","204":"No Content","205":"Reset Content","206":"Partial Content","207":"Multi-Status","208":"Already Reported","226":"IM Used","300":"Multiple Choices","301":"Moved Permanently","302":"Found","303":"See Other","304":"Not Modified","305":"Use Proxy","307":"Temporary Redirect","308":"Permanent Redirect","400":"Bad Request","401":"Unauthorized","402":"Payment Required","403":"Forbidden","404":"Not Found","405":"Method Not Allowed","406":"Not Acceptable","407":"Proxy Authentication Required","408":"Request Timeout","409":"Conflict","410":"Gone","411":"Length Required","412":"Precondition Failed","413":"Payload Too Large","414":"URI Too Long","415":"Unsupported Media Type","416":"Range Not Satisfiable","417":"Expectation Failed","418":"I'm a Teapot","421":"Misdirected Request","422":"Unprocessable Entity","423":"Locked","424":"Failed Dependency","425":"Unordered Collection","426":"Upgrade Required","428":"Precondition Required","429":"Too Many Requests","431":"Request Header Fields Too Large","451":"Unavailable For Legal Reasons","500":"Internal Server Error","501":"Not Implemented","502":"Bad Gateway","503":"Service Unavailable","504":"Gateway Timeout","505":"HTTP Version Not Supported","506":"Variant Also Negotiates","507":"Insufficient Storage","508":"Loop Detected","509":"Bandwidth Limit Exceeded","510":"Not Extended","511":"Network Authentication Required"},"globalAgent":"~agent"},"https:":{"globalAgent":{"_events":{},"_eventsCount":1,"defaultPort":443,"protocol":"https:","options":{"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}}},"pathname":"/api/article/list"},"_ended":true,"_ending":true,"_redirectCount":0,"_redirects":"~res~redirects","_requestBodyLength":0,"_requestBodyBuffers":[],"_currentRequest":"~","_currentUrl":"http://127.0.0.1:7001/api/article/list"}}
+response: {"status":404,"statusText":"Not Found","headers":{"vary":"Origin","x-response-time":"1","x-frame-options":"SAMEORIGIN","x-xss-protection":"1; mode=block","x-content-type-options":"nosniff","x-download-options":"noopen","content-type":"application/json; charset=utf-8","x-readtime":"21","content-length":"23","date":"Fri, 22 Feb 2019 03:05:12 GMT","connection":"close"},"config":{"transformRequest":{},"transformResponse":{},"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/0.17.1"},"method":"get","url":"http://127.0.0.1:7001/api/article/list"},"request":{"_events":{},"_eventsCount":6,"output":[],"outputEncodings":[],"outputCallbacks":[],"outputSize":0,"writable":true,"_last":true,"chunkedEncoding":false,"shouldKeepAlive":false,"useChunkedEncodingByDefault":false,"sendDate":false,"_removedConnection":false,"_removedContLen":false,"_removedTE":false,"_contentLength":0,"_hasBody":true,"_trailer":"","finished":true,"_headerSent":true,"socket":{"connecting":false,"_hadError":false,"_handle":{"reading":true,"onconnection":null},"_parent":null,"_host":null,"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":false,"endEmitted":false,"reading":true,"sync":false,"needReadable":true,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"emitClose":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"_events":{"close":[null,null]},"_eventsCount":7,"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":true,"needDrain":false,"ending":true,"ended":true,"finished":false,"destroyed":false,"decodeStrings":false,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":false,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":1,"prefinished":false,"errorEmitted":false,"emitClose":false,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":false,"allowHalfOpen":false,"_sockname":null,"_pendingData":null,"_pendingEncoding":"","server":null,"_server":null,"parser":null,"_httpMessage":"~request"},"connection":"~request~socket","_header":"GET /api/article/list HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.17.1\r\nHost: 127.0.0.1:7001\r\nConnection: close\r\n\r\n","agent":{"_events":{},"_eventsCount":1,"defaultPort":80,"protocol":"http:","options":{"path":null},"requests":{},"sockets":{"127.0.0.1:7001:":["~request~socket"]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256},"method":"GET","path":"/api/article/list","_ended":true,"res":{"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":true,"endEmitted":true,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"emitClose":true,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":true,"decoder":null,"encoding":null},"readable":false,"_events":{"end":[null,null]},"_eventsCount":3,"socket":"~request~socket","connection":"~request~socket","httpVersionMajor":1,"httpVersionMinor":1,"httpVersion":"1.1","complete":true,"headers":"~headers","rawHeaders":["Vary","Origin","X-Response-Time","1","x-frame-options","SAMEORIGIN","x-xss-protection","1; mode=block","x-content-type-options","nosniff","x-download-options","noopen","content-type","application/json; charset=utf-8","x-readtime","21","content-length","23","Date","Fri, 22 Feb 2019 03:05:12 GMT","Connection","close"],"trailers":{},"rawTrailers":[],"aborted":false,"upgrade":false,"url":"","method":null,"statusCode":404,"statusMessage":"Not Found","client":"~request~socket","_consuming":false,"_dumped":false,"req":"~request","responseUrl":"http://127.0.0.1:7001/api/article/list","redirects":[]},"timeoutCb":null,"upgradeOrConnect":false,"parser":null,"maxHeadersCount":null,"_redirectable":{"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":false,"decodeStrings":true,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":true,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":0,"prefinished":false,"errorEmitted":false,"emitClose":true,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":true,"_events":{},"_eventsCount":2,"_options":{"maxRedirects":21,"maxBodyLength":10485760,"protocol":"http:","hostname":"127.0.0.1","port":"7001","path":"/api/article/list","method":"get","headers":"~config~headers","nativeProtocols":{"http:":{"METHODS":["ACL","BIND","CHECKOUT","CONNECT","COPY","DELETE","GET","HEAD","LINK","LOCK","M-SEARCH","MERGE","MKACTIVITY","MKCALENDAR","MKCOL","MOVE","NOTIFY","OPTIONS","PATCH","POST","PROPFIND","PROPPATCH","PURGE","PUT","REBIND","REPORT","SEARCH","SOURCE","SUBSCRIBE","TRACE","UNBIND","UNLINK","UNLOCK","UNSUBSCRIBE"],"STATUS_CODES":{"100":"Continue","101":"Switching Protocols","102":"Processing","103":"Early Hints","200":"OK","201":"Created","202":"Accepted","203":"Non-Authoritative Information","204":"No Content","205":"Reset Content","206":"Partial Content","207":"Multi-Status","208":"Already Reported","226":"IM Used","300":"Multiple Choices","301":"Moved Permanently","302":"Found","303":"See Other","304":"Not Modified","305":"Use Proxy","307":"Temporary Redirect","308":"Permanent Redirect","400":"Bad Request","401":"Unauthorized","402":"Payment Required","403":"Forbidden","404":"Not Found","405":"Method Not Allowed","406":"Not Acceptable","407":"Proxy Authentication Required","408":"Request Timeout","409":"Conflict","410":"Gone","411":"Length Required","412":"Precondition Failed","413":"Payload Too Large","414":"URI Too Long","415":"Unsupported Media Type","416":"Range Not Satisfiable","417":"Expectation Failed","418":"I'm a Teapot","421":"Misdirected Request","422":"Unprocessable Entity","423":"Locked","424":"Failed Dependency","425":"Unordered Collection","426":"Upgrade Required","428":"Precondition Required","429":"Too Many Requests","431":"Request Header Fields Too Large","451":"Unavailable For Legal Reasons","500":"Internal Server Error","501":"Not Implemented","502":"Bad Gateway","503":"Service Unavailable","504":"Gateway Timeout","505":"HTTP Version Not Supported","506":"Variant Also Negotiates","507":"Insufficient Storage","508":"Loop Detected","509":"Bandwidth Limit Exceeded","510":"Not Extended","511":"Network Authentication Required"},"globalAgent":"~request~agent"},"https:":{"globalAgent":{"_events":{},"_eventsCount":1,"defaultPort":443,"protocol":"https:","options":{"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}}},"pathname":"/api/article/list"},"_ended":true,"_ending":true,"_redirectCount":0,"_redirects":"~request~res~redirects","_requestBodyLength":0,"_requestBodyBuffers":[],"_currentRequest":"~request","_currentUrl":"http://127.0.0.1:7001/api/article/list"}},"data":{"message":"Not Found"}}
+name: "unhandledRejectionError"
+pid: 37115
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 11:07:02,229 INFO 37211 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:07:02,293 INFO 37211 [egg-multipart] stream mode enable
+2019-02-22 11:07:03,135 INFO 37211 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:07:03,268 INFO 37211 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:07:03,275 INFO 37211 [egg-security] use csrf middleware
+2019-02-22 11:07:03,276 INFO 37211 [egg-security] use methodnoallow middleware
+2019-02-22 11:07:03,277 INFO 37211 [egg-security] use noopen middleware
+2019-02-22 11:07:03,278 INFO 37211 [egg-security] use nosniff middleware
+2019-02-22 11:07:03,278 INFO 37211 [egg-security] use xssProtection middleware
+2019-02-22 11:07:03,279 INFO 37211 [egg-security] use xframe middleware
+2019-02-22 11:07:03,280 INFO 37211 [egg-security] use dta middleware
+2019-02-22 11:07:03,280 INFO 37211 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:07:03,297 INFO 37211 [egg:core] dump config after load, 6ms
+2019-02-22 11:07:03,299 INFO 37211 [egg-mongoose] starting...
+2019-02-22 11:07:03,331 INFO 37211 [egg-watcher:application] watcher start success
+2019-02-22 11:07:03,340 INFO 37211 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:07:03,346 INFO 37211 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:07:03,359 INFO 37211 [egg:core] dump config after ready, 8ms
+2019-02-22 11:11:43,714 INFO 37277 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:11:43,781 INFO 37277 [egg-multipart] stream mode enable
+2019-02-22 11:11:44,302 INFO 37277 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:11:44,488 INFO 37277 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:11:44,493 INFO 37277 [egg-security] use csrf middleware
+2019-02-22 11:11:44,495 INFO 37277 [egg-security] use methodnoallow middleware
+2019-02-22 11:11:44,497 INFO 37277 [egg-security] use noopen middleware
+2019-02-22 11:11:44,498 INFO 37277 [egg-security] use nosniff middleware
+2019-02-22 11:11:44,499 INFO 37277 [egg-security] use xssProtection middleware
+2019-02-22 11:11:44,500 INFO 37277 [egg-security] use xframe middleware
+2019-02-22 11:11:44,501 INFO 37277 [egg-security] use dta middleware
+2019-02-22 11:11:44,501 INFO 37277 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:11:44,523 INFO 37277 [egg:core] dump config after load, 12ms
+2019-02-22 11:11:44,525 INFO 37277 [egg-mongoose] starting...
+2019-02-22 11:11:44,551 INFO 37277 [egg-watcher:application] watcher start success
+2019-02-22 11:11:44,558 INFO 37277 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:11:44,565 INFO 37277 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:11:44,577 INFO 37277 [egg:core] dump config after ready, 7ms
+2019-02-22 11:13:33,678 INFO 37282 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:13:33,722 INFO 37282 [egg-multipart] stream mode enable
+2019-02-22 11:13:34,184 INFO 37282 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:13:34,305 INFO 37282 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:13:34,308 INFO 37282 [egg-security] use csrf middleware
+2019-02-22 11:13:34,309 INFO 37282 [egg-security] use methodnoallow middleware
+2019-02-22 11:13:34,310 INFO 37282 [egg-security] use noopen middleware
+2019-02-22 11:13:34,311 INFO 37282 [egg-security] use nosniff middleware
+2019-02-22 11:13:34,311 INFO 37282 [egg-security] use xssProtection middleware
+2019-02-22 11:13:34,312 INFO 37282 [egg-security] use xframe middleware
+2019-02-22 11:13:34,313 INFO 37282 [egg-security] use dta middleware
+2019-02-22 11:13:34,313 INFO 37282 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:13:34,339 INFO 37282 [egg:core] dump config after load, 17ms
+2019-02-22 11:13:34,343 INFO 37282 [egg-mongoose] starting...
+2019-02-22 11:13:34,371 INFO 37282 [egg-watcher:application] watcher start success
+2019-02-22 11:13:34,379 INFO 37282 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:13:34,385 INFO 37282 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:13:34,400 INFO 37282 [egg:core] dump config after ready, 10ms
+2019-02-22 11:13:46,260 INFO 37284 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:13:46,297 INFO 37284 [egg-multipart] stream mode enable
+2019-02-22 11:13:46,487 INFO 37284 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:13:46,553 INFO 37284 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:13:46,555 INFO 37284 [egg-security] use csrf middleware
+2019-02-22 11:13:46,556 INFO 37284 [egg-security] use methodnoallow middleware
+2019-02-22 11:13:46,557 INFO 37284 [egg-security] use noopen middleware
+2019-02-22 11:13:46,558 INFO 37284 [egg-security] use nosniff middleware
+2019-02-22 11:13:46,559 INFO 37284 [egg-security] use xssProtection middleware
+2019-02-22 11:13:46,559 INFO 37284 [egg-security] use xframe middleware
+2019-02-22 11:13:46,559 INFO 37284 [egg-security] use dta middleware
+2019-02-22 11:13:46,559 INFO 37284 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:13:46,571 INFO 37284 [egg:core] dump config after load, 6ms
+2019-02-22 11:13:46,574 INFO 37284 [egg-mongoose] starting...
+2019-02-22 11:13:46,603 INFO 37284 [egg-watcher:application] watcher start success
+2019-02-22 11:13:46,612 INFO 37284 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:13:46,619 INFO 37284 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:13:46,639 INFO 37284 [egg:core] dump config after ready, 15ms
+2019-02-22 11:26:12,129 INFO 37443 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:26:12,181 INFO 37443 [egg-multipart] stream mode enable
+2019-02-22 11:26:12,989 INFO 37443 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:26:13,109 INFO 37443 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:26:13,112 INFO 37443 [egg-security] use csrf middleware
+2019-02-22 11:26:13,113 INFO 37443 [egg-security] use methodnoallow middleware
+2019-02-22 11:26:13,114 INFO 37443 [egg-security] use noopen middleware
+2019-02-22 11:26:13,116 INFO 37443 [egg-security] use nosniff middleware
+2019-02-22 11:26:13,116 INFO 37443 [egg-security] use xssProtection middleware
+2019-02-22 11:26:13,118 INFO 37443 [egg-security] use xframe middleware
+2019-02-22 11:26:13,119 INFO 37443 [egg-security] use dta middleware
+2019-02-22 11:26:13,119 INFO 37443 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:26:13,148 INFO 37443 [egg:core] dump config after load, 7ms
+2019-02-22 11:26:13,151 INFO 37443 [egg-mongoose] starting...
+2019-02-22 11:26:13,178 INFO 37443 [egg-watcher:application] watcher start success
+2019-02-22 11:26:13,186 INFO 37443 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:26:13,193 INFO 37443 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:26:13,205 INFO 37443 [egg:core] dump config after ready, 7ms
+2019-02-22 11:27:24,405 INFO 37446 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:27:24,449 INFO 37446 [egg-multipart] stream mode enable
+2019-02-22 11:27:24,789 INFO 37446 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:27:24,893 INFO 37446 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:27:24,895 INFO 37446 [egg-security] use csrf middleware
+2019-02-22 11:27:24,897 INFO 37446 [egg-security] use methodnoallow middleware
+2019-02-22 11:27:24,898 INFO 37446 [egg-security] use noopen middleware
+2019-02-22 11:27:24,899 INFO 37446 [egg-security] use nosniff middleware
+2019-02-22 11:27:24,899 INFO 37446 [egg-security] use xssProtection middleware
+2019-02-22 11:27:24,900 INFO 37446 [egg-security] use xframe middleware
+2019-02-22 11:27:24,901 INFO 37446 [egg-security] use dta middleware
+2019-02-22 11:27:24,901 INFO 37446 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:27:24,917 INFO 37446 [egg:core] dump config after load, 6ms
+2019-02-22 11:27:24,920 INFO 37446 [egg-mongoose] starting...
+2019-02-22 11:27:24,944 INFO 37446 [egg-watcher:application] watcher start success
+2019-02-22 11:27:24,952 INFO 37446 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:27:24,958 INFO 37446 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:27:24,980 INFO 37446 [egg:core] dump config after ready, 14ms
+2019-02-22 11:39:33,762 INFO 37563 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:39:33,836 INFO 37563 [egg-multipart] stream mode enable
+2019-02-22 11:39:34,587 INFO 37563 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:39:34,696 INFO 37563 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:39:34,699 INFO 37563 [egg-security] use csrf middleware
+2019-02-22 11:39:34,700 INFO 37563 [egg-security] use methodnoallow middleware
+2019-02-22 11:39:34,701 INFO 37563 [egg-security] use noopen middleware
+2019-02-22 11:39:34,702 INFO 37563 [egg-security] use nosniff middleware
+2019-02-22 11:39:34,703 INFO 37563 [egg-security] use xssProtection middleware
+2019-02-22 11:39:34,703 INFO 37563 [egg-security] use xframe middleware
+2019-02-22 11:39:34,704 INFO 37563 [egg-security] use dta middleware
+2019-02-22 11:39:34,704 INFO 37563 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:39:34,724 INFO 37563 [egg:core] dump config after load, 10ms
+2019-02-22 11:39:34,727 INFO 37563 [egg-mongoose] starting...
+2019-02-22 11:39:34,753 INFO 37563 [egg-watcher:application] watcher start success
+2019-02-22 11:39:34,760 INFO 37563 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:39:34,768 INFO 37563 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:39:34,778 INFO 37563 [egg:core] dump config after ready, 5ms
+2019-02-22 11:41:01,729 INFO 37567 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:41:01,776 INFO 37567 [egg-multipart] stream mode enable
+2019-02-22 11:41:02,129 INFO 37567 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:41:02,231 INFO 37567 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:41:02,235 INFO 37567 [egg-security] use csrf middleware
+2019-02-22 11:41:02,236 INFO 37567 [egg-security] use methodnoallow middleware
+2019-02-22 11:41:02,236 INFO 37567 [egg-security] use noopen middleware
+2019-02-22 11:41:02,237 INFO 37567 [egg-security] use nosniff middleware
+2019-02-22 11:41:02,238 INFO 37567 [egg-security] use xssProtection middleware
+2019-02-22 11:41:02,239 INFO 37567 [egg-security] use xframe middleware
+2019-02-22 11:41:02,239 INFO 37567 [egg-security] use dta middleware
+2019-02-22 11:41:02,239 INFO 37567 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:41:02,253 INFO 37567 [egg:core] dump config after load, 6ms
+2019-02-22 11:41:02,257 INFO 37567 [egg-mongoose] starting...
+2019-02-22 11:41:02,283 INFO 37567 [egg-watcher:application] watcher start success
+2019-02-22 11:41:02,292 INFO 37567 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:41:02,299 INFO 37567 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:41:02,321 INFO 37567 [egg:core] dump config after ready, 16ms
+2019-02-22 11:41:03,532 INFO 37568 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:41:03,574 INFO 37568 [egg-multipart] stream mode enable
+2019-02-22 11:41:03,751 INFO 37568 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:41:03,810 INFO 37568 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:41:03,812 INFO 37568 [egg-security] use csrf middleware
+2019-02-22 11:41:03,813 INFO 37568 [egg-security] use methodnoallow middleware
+2019-02-22 11:41:03,813 INFO 37568 [egg-security] use noopen middleware
+2019-02-22 11:41:03,814 INFO 37568 [egg-security] use nosniff middleware
+2019-02-22 11:41:03,814 INFO 37568 [egg-security] use xssProtection middleware
+2019-02-22 11:41:03,814 INFO 37568 [egg-security] use xframe middleware
+2019-02-22 11:41:03,814 INFO 37568 [egg-security] use dta middleware
+2019-02-22 11:41:03,814 INFO 37568 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:41:03,828 INFO 37568 [egg:core] dump config after load, 8ms
+2019-02-22 11:41:03,831 INFO 37568 [egg-mongoose] starting...
+2019-02-22 11:41:03,854 INFO 37568 [egg-watcher:application] watcher start success
+2019-02-22 11:41:03,861 INFO 37568 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:41:03,868 INFO 37568 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:41:03,886 INFO 37568 [egg:core] dump config after ready, 13ms
+2019-02-22 11:42:02,318 INFO 37596 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:42:02,364 INFO 37596 [egg-multipart] stream mode enable
+2019-02-22 11:42:02,755 INFO 37596 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:42:02,853 INFO 37596 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:42:02,857 INFO 37596 [egg-security] use csrf middleware
+2019-02-22 11:42:02,857 INFO 37596 [egg-security] use methodnoallow middleware
+2019-02-22 11:42:02,858 INFO 37596 [egg-security] use noopen middleware
+2019-02-22 11:42:02,859 INFO 37596 [egg-security] use nosniff middleware
+2019-02-22 11:42:02,859 INFO 37596 [egg-security] use xssProtection middleware
+2019-02-22 11:42:02,860 INFO 37596 [egg-security] use xframe middleware
+2019-02-22 11:42:02,861 INFO 37596 [egg-security] use dta middleware
+2019-02-22 11:42:02,861 INFO 37596 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:42:02,879 INFO 37596 [egg:core] dump config after load, 8ms
+2019-02-22 11:42:02,882 INFO 37596 [egg-mongoose] starting...
+2019-02-22 11:42:02,914 INFO 37596 [egg-watcher:application] watcher start success
+2019-02-22 11:42:02,922 INFO 37596 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:42:02,930 INFO 37596 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:42:02,945 INFO 37596 [egg:core] dump config after ready, 8ms
+2019-02-22 11:43:15,137 ERROR 37596 nodejs.unhandledRejectionError: connect ECONNREFUSED 127.0.0.1:7001
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1117:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 7001
+config: {"transformRequest":{},"transformResponse":{},"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/0.17.1"},"method":"get","url":"http://127.0.0.1:7001/api/article/list"}
+request: {"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":false,"decodeStrings":true,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":true,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":0,"prefinished":false,"errorEmitted":false,"emitClose":true,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":true,"_events":{},"_eventsCount":2,"_options":{"maxRedirects":21,"maxBodyLength":10485760,"protocol":"http:","hostname":"127.0.0.1","port":"7001","path":"/api/article/list","method":"get","headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/0.17.1"},"nativeProtocols":{"http:":{"METHODS":["ACL","BIND","CHECKOUT","CONNECT","COPY","DELETE","GET","HEAD","LINK","LOCK","M-SEARCH","MERGE","MKACTIVITY","MKCALENDAR","MKCOL","MOVE","NOTIFY","OPTIONS","PATCH","POST","PROPFIND","PROPPATCH","PURGE","PUT","REBIND","REPORT","SEARCH","SOURCE","SUBSCRIBE","TRACE","UNBIND","UNLINK","UNLOCK","UNSUBSCRIBE"],"STATUS_CODES":{"100":"Continue","101":"Switching Protocols","102":"Processing","103":"Early Hints","200":"OK","201":"Created","202":"Accepted","203":"Non-Authoritative Information","204":"No Content","205":"Reset Content","206":"Partial Content","207":"Multi-Status","208":"Already Reported","226":"IM Used","300":"Multiple Choices","301":"Moved Permanently","302":"Found","303":"See Other","304":"Not Modified","305":"Use Proxy","307":"Temporary Redirect","308":"Permanent Redirect","400":"Bad Request","401":"Unauthorized","402":"Payment Required","403":"Forbidden","404":"Not Found","405":"Method Not Allowed","406":"Not Acceptable","407":"Proxy Authentication Required","408":"Request Timeout","409":"Conflict","410":"Gone","411":"Length Required","412":"Precondition Failed","413":"Payload Too Large","414":"URI Too Long","415":"Unsupported Media Type","416":"Range Not Satisfiable","417":"Expectation Failed","418":"I'm a Teapot","421":"Misdirected Request","422":"Unprocessable Entity","423":"Locked","424":"Failed Dependency","425":"Unordered Collection","426":"Upgrade Required","428":"Precondition Required","429":"Too Many Requests","431":"Request Header Fields Too Large","451":"Unavailable For Legal Reasons","500":"Internal Server Error","501":"Not Implemented","502":"Bad Gateway","503":"Service Unavailable","504":"Gateway Timeout","505":"HTTP Version Not Supported","506":"Variant Also Negotiates","507":"Insufficient Storage","508":"Loop Detected","509":"Bandwidth Limit Exceeded","510":"Not Extended","511":"Network Authentication Required"},"globalAgent":{"_events":{},"_eventsCount":1,"defaultPort":80,"protocol":"http:","options":{"path":null},"requests":{},"sockets":{"127.0.0.1:7001:":[{"connecting":false,"_hadError":true,"_handle":null,"_parent":null,"_host":null,"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":false,"endEmitted":false,"reading":true,"sync":false,"needReadable":true,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"emitClose":false,"destroyed":true,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":false,"_events":{"connect":[null,null,null],"close":[null,null]},"_eventsCount":7,"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":true,"decodeStrings":false,"defaultEncoding":"utf8","length":144,"writing":true,"corked":0,"sync":false,"bufferProcessing":false,"writelen":144,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":1,"prefinished":false,"errorEmitted":true,"emitClose":false,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":false,"allowHalfOpen":false,"_sockname":null,"_pendingData":"GET /api/article/list HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.17.1\r\nHost: 127.0.0.1:7001\r\nConnection: close\r\n\r\n","_pendingEncoding":"latin1","server":null,"_server":null,"parser":null,"_httpMessage":{"_events":{},"_eventsCount":6,"output":[],"outputEncodings":[],"outputCallbacks":[],"outputSize":0,"writable":true,"_last":true,"chunkedEncoding":false,"shouldKeepAlive":false,"useChunkedEncodingByDefault":false,"sendDate":false,"_removedConnection":false,"_removedContLen":false,"_removedTE":false,"_contentLength":0,"_hasBody":true,"_trailer":"","finished":true,"_headerSent":true,"socket":"~_options~nativeProtocols~http:~globalAgent~sockets~127.0.0.1:7001:~0","connection":"~_options~nativeProtocols~http:~globalAgent~sockets~127.0.0.1:7001:~0","_header":"GET /api/article/list HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.17.1\r\nHost: 127.0.0.1:7001\r\nConnection: close\r\n\r\n","agent":"~_options~nativeProtocols~http:~globalAgent","method":"GET","path":"/api/article/list","_ended":false,"res":null,"timeoutCb":null,"upgradeOrConnect":false,"parser":null,"maxHeadersCount":null,"_redirectable":"~"}}]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256}},"https:":{"globalAgent":{"_events":{},"_eventsCount":1,"defaultPort":443,"protocol":"https:","options":{"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}}},"pathname":"/api/article/list"},"_ended":true,"_ending":true,"_redirectCount":0,"_redirects":[],"_requestBodyLength":0,"_requestBodyBuffers":[],"_currentRequest":"~_options~nativeProtocols~http:~globalAgent~sockets~127.0.0.1:7001:~0~_httpMessage","_currentUrl":"http://127.0.0.1:7001/api/article/list"}
+response: undefined
+name: "unhandledRejectionError"
+pid: 37596
+hostname: baibangyideMacBook-Pro.local
+
+2019-02-22 11:44:10,666 INFO 37646 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 11:44:10,706 INFO 37646 [egg-multipart] stream mode enable
+2019-02-22 11:44:11,067 INFO 37646 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 11:44:11,212 INFO 37646 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 11:44:11,215 INFO 37646 [egg-security] use csrf middleware
+2019-02-22 11:44:11,216 INFO 37646 [egg-security] use methodnoallow middleware
+2019-02-22 11:44:11,217 INFO 37646 [egg-security] use noopen middleware
+2019-02-22 11:44:11,218 INFO 37646 [egg-security] use nosniff middleware
+2019-02-22 11:44:11,219 INFO 37646 [egg-security] use xssProtection middleware
+2019-02-22 11:44:11,220 INFO 37646 [egg-security] use xframe middleware
+2019-02-22 11:44:11,220 INFO 37646 [egg-security] use dta middleware
+2019-02-22 11:44:11,220 INFO 37646 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 11:44:11,237 INFO 37646 [egg:core] dump config after load, 6ms
+2019-02-22 11:44:11,240 INFO 37646 [egg-mongoose] starting...
+2019-02-22 11:44:11,283 INFO 37646 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 11:44:11,290 INFO 37646 [egg-mongoose] instance[0] start successfully
+2019-02-22 11:44:11,298 INFO 37646 [egg-watcher:application] watcher start success
+2019-02-22 11:44:11,320 INFO 37646 [egg:core] dump config after ready, 16ms
+2019-02-22 12:21:32,505 WARN 37646 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-02-22 12:59:05,486 WARN 37646 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-02-22 13:38:45,247 WARN 37646 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-02-22 14:23:33,462 WARN 37646 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-02-22 14:28:59,644 INFO 37917 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 14:28:59,681 INFO 37917 [egg-multipart] stream mode enable
+2019-02-22 14:29:00,047 INFO 37917 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 14:29:00,156 INFO 37917 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 14:29:00,158 INFO 37917 [egg-security] use csrf middleware
+2019-02-22 14:29:00,160 INFO 37917 [egg-security] use methodnoallow middleware
+2019-02-22 14:29:00,160 INFO 37917 [egg-security] use noopen middleware
+2019-02-22 14:29:00,161 INFO 37917 [egg-security] use nosniff middleware
+2019-02-22 14:29:00,162 INFO 37917 [egg-security] use xssProtection middleware
+2019-02-22 14:29:00,163 INFO 37917 [egg-security] use xframe middleware
+2019-02-22 14:29:00,163 INFO 37917 [egg-security] use dta middleware
+2019-02-22 14:29:00,163 INFO 37917 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 14:29:00,185 INFO 37917 [egg:core] dump config after load, 13ms
+2019-02-22 14:29:00,188 INFO 37917 [egg-mongoose] starting...
+2019-02-22 14:29:00,220 INFO 37917 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 14:29:00,226 INFO 37917 [egg-mongoose] instance[0] start successfully
+2019-02-22 14:29:00,231 INFO 37917 [egg-watcher:application] watcher start success
+2019-02-22 14:29:00,240 INFO 37917 [egg:core] dump config after ready, 5ms
+2019-02-22 15:13:48,485 INFO 39649 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 15:13:48,540 INFO 39649 [egg-multipart] stream mode enable
+2019-02-22 15:13:49,014 INFO 39649 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 15:13:49,125 INFO 39649 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 15:13:49,129 INFO 39649 [egg-security] use csrf middleware
+2019-02-22 15:13:49,130 INFO 39649 [egg-security] use methodnoallow middleware
+2019-02-22 15:13:49,131 INFO 39649 [egg-security] use noopen middleware
+2019-02-22 15:13:49,132 INFO 39649 [egg-security] use nosniff middleware
+2019-02-22 15:13:49,133 INFO 39649 [egg-security] use xssProtection middleware
+2019-02-22 15:13:49,133 INFO 39649 [egg-security] use xframe middleware
+2019-02-22 15:13:49,134 INFO 39649 [egg-security] use dta middleware
+2019-02-22 15:13:49,134 INFO 39649 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 15:13:49,153 INFO 39649 [egg:core] dump config after load, 9ms
+2019-02-22 15:13:49,158 INFO 39649 [egg-mongoose] starting...
+2019-02-22 15:13:49,191 INFO 39649 [egg-watcher:application] watcher start success
+2019-02-22 15:13:49,195 INFO 39649 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 15:13:49,201 INFO 39649 [egg-mongoose] instance[0] start successfully
+2019-02-22 15:13:49,219 INFO 39649 [egg:core] dump config after ready, 12ms
+2019-02-22 15:29:56,796 INFO 39828 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 15:29:56,853 INFO 39828 [egg-multipart] stream mode enable
+2019-02-22 15:29:57,444 INFO 39828 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 15:29:57,652 INFO 39828 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 15:29:57,656 INFO 39828 [egg-security] use csrf middleware
+2019-02-22 15:29:57,657 INFO 39828 [egg-security] use methodnoallow middleware
+2019-02-22 15:29:57,659 INFO 39828 [egg-security] use noopen middleware
+2019-02-22 15:29:57,660 INFO 39828 [egg-security] use nosniff middleware
+2019-02-22 15:29:57,660 INFO 39828 [egg-security] use xssProtection middleware
+2019-02-22 15:29:57,661 INFO 39828 [egg-security] use xframe middleware
+2019-02-22 15:29:57,662 INFO 39828 [egg-security] use dta middleware
+2019-02-22 15:29:57,662 INFO 39828 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 15:29:57,683 INFO 39828 [egg:core] dump config after load, 10ms
+2019-02-22 15:29:57,686 INFO 39828 [egg-mongoose] starting...
+2019-02-22 15:29:57,717 INFO 39828 [egg-watcher:application] watcher start success
+2019-02-22 15:29:57,721 INFO 39828 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 15:29:57,729 INFO 39828 [egg-mongoose] instance[0] start successfully
+2019-02-22 15:29:57,751 INFO 39828 [egg:core] dump config after ready, 15ms
+2019-02-22 15:30:51,816 INFO 39830 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 15:30:51,899 INFO 39830 [egg-multipart] stream mode enable
+2019-02-22 15:30:52,306 INFO 39830 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 15:30:52,406 INFO 39830 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 15:30:52,408 INFO 39830 [egg-security] use csrf middleware
+2019-02-22 15:30:52,410 INFO 39830 [egg-security] use methodnoallow middleware
+2019-02-22 15:30:52,411 INFO 39830 [egg-security] use noopen middleware
+2019-02-22 15:30:52,412 INFO 39830 [egg-security] use nosniff middleware
+2019-02-22 15:30:52,413 INFO 39830 [egg-security] use xssProtection middleware
+2019-02-22 15:30:52,414 INFO 39830 [egg-security] use xframe middleware
+2019-02-22 15:30:52,415 INFO 39830 [egg-security] use dta middleware
+2019-02-22 15:30:52,415 INFO 39830 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 15:30:52,433 INFO 39830 [egg:core] dump config after load, 7ms
+2019-02-22 15:30:52,435 INFO 39830 [egg-mongoose] starting...
+2019-02-22 15:30:52,463 INFO 39830 [egg-watcher:application] watcher start success
+2019-02-22 15:30:52,471 INFO 39830 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 15:30:52,479 INFO 39830 [egg-mongoose] instance[0] start successfully
+2019-02-22 15:30:52,497 INFO 39830 [egg:core] dump config after ready, 12ms
+2019-02-22 15:35:33,665 INFO 39897 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 15:35:33,727 INFO 39897 [egg-multipart] stream mode enable
+2019-02-22 15:35:34,321 INFO 39897 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 15:35:34,444 INFO 39897 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 15:35:34,448 INFO 39897 [egg-security] use csrf middleware
+2019-02-22 15:35:34,450 INFO 39897 [egg-security] use methodnoallow middleware
+2019-02-22 15:35:34,450 INFO 39897 [egg-security] use noopen middleware
+2019-02-22 15:35:34,452 INFO 39897 [egg-security] use nosniff middleware
+2019-02-22 15:35:34,452 INFO 39897 [egg-security] use xssProtection middleware
+2019-02-22 15:35:34,453 INFO 39897 [egg-security] use xframe middleware
+2019-02-22 15:35:34,454 INFO 39897 [egg-security] use dta middleware
+2019-02-22 15:35:34,454 INFO 39897 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 15:35:34,480 INFO 39897 [egg:core] dump config after load, 10ms
+2019-02-22 15:35:34,483 INFO 39897 [egg-mongoose] starting...
+2019-02-22 15:35:34,513 INFO 39897 [egg-watcher:application] watcher start success
+2019-02-22 15:35:34,522 INFO 39897 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 15:35:34,534 INFO 39897 [egg-mongoose] instance[0] start successfully
+2019-02-22 15:35:34,547 INFO 39897 [egg:core] dump config after ready, 7ms
+2019-02-22 15:37:01,183 INFO 39901 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 15:37:01,238 INFO 39901 [egg-multipart] stream mode enable
+2019-02-22 15:37:01,686 INFO 39901 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 15:37:01,798 INFO 39901 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 15:37:01,801 INFO 39901 [egg-security] use csrf middleware
+2019-02-22 15:37:01,802 INFO 39901 [egg-security] use methodnoallow middleware
+2019-02-22 15:37:01,802 INFO 39901 [egg-security] use noopen middleware
+2019-02-22 15:37:01,803 INFO 39901 [egg-security] use nosniff middleware
+2019-02-22 15:37:01,804 INFO 39901 [egg-security] use xssProtection middleware
+2019-02-22 15:37:01,804 INFO 39901 [egg-security] use xframe middleware
+2019-02-22 15:37:01,805 INFO 39901 [egg-security] use dta middleware
+2019-02-22 15:37:01,805 INFO 39901 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 15:37:01,831 INFO 39901 [egg:core] dump config after load, 16ms
+2019-02-22 15:37:01,835 INFO 39901 [egg-mongoose] starting...
+2019-02-22 15:37:01,866 INFO 39901 [egg-watcher:application] watcher start success
+2019-02-22 15:37:01,875 INFO 39901 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 15:37:01,882 INFO 39901 [egg-mongoose] instance[0] start successfully
+2019-02-22 15:37:01,895 INFO 39901 [egg:core] dump config after ready, 8ms
+2019-02-22 15:41:03,637 INFO 39951 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 15:41:03,712 INFO 39951 [egg-multipart] stream mode enable
+2019-02-22 15:41:04,352 INFO 39951 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 15:41:04,632 INFO 39951 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 15:41:04,635 INFO 39951 [egg-security] use csrf middleware
+2019-02-22 15:41:04,636 INFO 39951 [egg-security] use methodnoallow middleware
+2019-02-22 15:41:04,638 INFO 39951 [egg-security] use noopen middleware
+2019-02-22 15:41:04,639 INFO 39951 [egg-security] use nosniff middleware
+2019-02-22 15:41:04,640 INFO 39951 [egg-security] use xssProtection middleware
+2019-02-22 15:41:04,641 INFO 39951 [egg-security] use xframe middleware
+2019-02-22 15:41:04,642 INFO 39951 [egg-security] use dta middleware
+2019-02-22 15:41:04,642 INFO 39951 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 15:41:04,673 INFO 39951 [egg:core] dump config after load, 7ms
+2019-02-22 15:41:04,676 INFO 39951 [egg-mongoose] starting...
+2019-02-22 15:41:04,703 INFO 39951 [egg-watcher:application] watcher start success
+2019-02-22 15:41:04,711 INFO 39951 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 15:41:04,717 INFO 39951 [egg-mongoose] instance[0] start successfully
+2019-02-22 15:41:04,729 INFO 39951 [egg:core] dump config after ready, 6ms
+2019-02-22 15:41:26,727 INFO 39952 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 15:41:26,796 INFO 39952 [egg-multipart] stream mode enable
+2019-02-22 15:41:27,401 INFO 39952 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 15:41:27,503 INFO 39952 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 15:41:27,506 INFO 39952 [egg-security] use csrf middleware
+2019-02-22 15:41:27,507 INFO 39952 [egg-security] use methodnoallow middleware
+2019-02-22 15:41:27,508 INFO 39952 [egg-security] use noopen middleware
+2019-02-22 15:41:27,509 INFO 39952 [egg-security] use nosniff middleware
+2019-02-22 15:41:27,510 INFO 39952 [egg-security] use xssProtection middleware
+2019-02-22 15:41:27,511 INFO 39952 [egg-security] use xframe middleware
+2019-02-22 15:41:27,511 INFO 39952 [egg-security] use dta middleware
+2019-02-22 15:41:27,511 INFO 39952 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 15:41:27,528 INFO 39952 [egg:core] dump config after load, 8ms
+2019-02-22 15:41:27,530 INFO 39952 [egg-mongoose] starting...
+2019-02-22 15:41:27,559 INFO 39952 [egg-watcher:application] watcher start success
+2019-02-22 15:41:27,566 INFO 39952 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 15:41:27,573 INFO 39952 [egg-mongoose] instance[0] start successfully
+2019-02-22 15:41:27,585 INFO 39952 [egg:core] dump config after ready, 7ms
+2019-02-22 16:01:18,145 INFO 40308 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:01:18,213 INFO 40308 [egg-multipart] stream mode enable
+2019-02-22 16:01:19,013 INFO 40308 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:01:19,142 INFO 40308 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:01:19,145 INFO 40308 [egg-security] use csrf middleware
+2019-02-22 16:01:19,146 INFO 40308 [egg-security] use methodnoallow middleware
+2019-02-22 16:01:19,146 INFO 40308 [egg-security] use noopen middleware
+2019-02-22 16:01:19,147 INFO 40308 [egg-security] use nosniff middleware
+2019-02-22 16:01:19,148 INFO 40308 [egg-security] use xssProtection middleware
+2019-02-22 16:01:19,148 INFO 40308 [egg-security] use xframe middleware
+2019-02-22 16:01:19,149 INFO 40308 [egg-security] use dta middleware
+2019-02-22 16:01:19,149 INFO 40308 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 16:01:19,173 INFO 40308 [egg:core] dump config after load, 6ms
+2019-02-22 16:01:19,175 INFO 40308 [egg-mongoose] starting...
+2019-02-22 16:01:19,207 INFO 40308 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:01:19,214 INFO 40308 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:01:19,219 INFO 40308 [egg-watcher:application] watcher start success
+2019-02-22 16:01:19,228 INFO 40308 [egg:core] dump config after ready, 5ms
+2019-02-22 16:04:18,789 INFO 40384 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:04:18,847 INFO 40384 [egg-multipart] stream mode enable
+2019-02-22 16:04:19,281 INFO 40384 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:04:19,390 INFO 40384 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:04:19,393 INFO 40384 [egg-security] use csrf middleware
+2019-02-22 16:04:19,394 INFO 40384 [egg-security] use methodnoallow middleware
+2019-02-22 16:04:19,395 INFO 40384 [egg-security] use noopen middleware
+2019-02-22 16:04:19,396 INFO 40384 [egg-security] use nosniff middleware
+2019-02-22 16:04:19,397 INFO 40384 [egg-security] use xssProtection middleware
+2019-02-22 16:04:19,397 INFO 40384 [egg-security] use xframe middleware
+2019-02-22 16:04:19,398 INFO 40384 [egg-security] use dta middleware
+2019-02-22 16:04:19,398 INFO 40384 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 16:04:19,416 INFO 40384 [egg:core] dump config after load, 9ms
+2019-02-22 16:04:19,418 INFO 40384 [egg-mongoose] starting...
+2019-02-22 16:04:19,450 INFO 40384 [egg-watcher:application] watcher start success
+2019-02-22 16:04:19,457 INFO 40384 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:04:19,464 INFO 40384 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:04:19,476 INFO 40384 [egg:core] dump config after ready, 6ms
+2019-02-22 16:05:59,279 INFO 40411 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:05:59,345 INFO 40411 [egg-multipart] stream mode enable
+2019-02-22 16:05:59,846 INFO 40411 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:06:00,003 INFO 40411 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:06:00,007 INFO 40411 [egg-security] use csrf middleware
+2019-02-22 16:06:00,008 INFO 40411 [egg-security] use methodnoallow middleware
+2019-02-22 16:06:00,009 INFO 40411 [egg-security] use noopen middleware
+2019-02-22 16:06:00,010 INFO 40411 [egg-security] use nosniff middleware
+2019-02-22 16:06:00,011 INFO 40411 [egg-security] use xssProtection middleware
+2019-02-22 16:06:00,012 INFO 40411 [egg-security] use xframe middleware
+2019-02-22 16:06:00,013 INFO 40411 [egg-security] use dta middleware
+2019-02-22 16:06:00,013 INFO 40411 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 16:06:00,038 INFO 40411 [egg:core] dump config after load, 10ms
+2019-02-22 16:06:00,041 INFO 40411 [egg-mongoose] starting...
+2019-02-22 16:06:00,075 INFO 40411 [egg-watcher:application] watcher start success
+2019-02-22 16:06:00,086 INFO 40411 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:06:00,096 INFO 40411 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:06:00,111 INFO 40411 [egg:core] dump config after ready, 9ms
+2019-02-22 16:10:49,013 INFO 40452 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:10:49,070 INFO 40452 [egg-multipart] stream mode enable
+2019-02-22 16:10:49,479 INFO 40452 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:10:49,606 INFO 40452 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:10:49,609 INFO 40452 [egg-security] use csrf middleware
+2019-02-22 16:10:49,610 INFO 40452 [egg-security] use methodnoallow middleware
+2019-02-22 16:10:49,611 INFO 40452 [egg-security] use noopen middleware
+2019-02-22 16:10:49,612 INFO 40452 [egg-security] use nosniff middleware
+2019-02-22 16:10:49,613 INFO 40452 [egg-security] use xssProtection middleware
+2019-02-22 16:10:49,614 INFO 40452 [egg-security] use xframe middleware
+2019-02-22 16:10:49,615 INFO 40452 [egg-security] use dta middleware
+2019-02-22 16:10:49,615 INFO 40452 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 16:10:49,631 INFO 40452 [egg:core] dump config after load, 7ms
+2019-02-22 16:10:49,638 INFO 40452 [egg-mongoose] starting...
+2019-02-22 16:10:49,679 INFO 40452 [egg-watcher:application] watcher start success
+2019-02-22 16:10:49,687 INFO 40452 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:10:49,694 INFO 40452 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:10:49,723 INFO 40452 [egg:core] dump config after ready, 23ms
+2019-02-22 16:13:29,353 INFO 40488 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:13:29,403 INFO 40488 [egg-multipart] stream mode enable
+2019-02-22 16:13:29,782 INFO 40488 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:13:29,919 INFO 40488 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:13:29,922 INFO 40488 [egg-security] use csrf middleware
+2019-02-22 16:13:29,923 INFO 40488 [egg-security] use methodnoallow middleware
+2019-02-22 16:13:29,924 INFO 40488 [egg-security] use noopen middleware
+2019-02-22 16:13:29,925 INFO 40488 [egg-security] use nosniff middleware
+2019-02-22 16:13:29,926 INFO 40488 [egg-security] use xssProtection middleware
+2019-02-22 16:13:29,926 INFO 40488 [egg-security] use xframe middleware
+2019-02-22 16:13:29,927 INFO 40488 [egg-security] use dta middleware
+2019-02-22 16:13:29,927 INFO 40488 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 16:13:29,945 INFO 40488 [egg:core] dump config after load, 7ms
+2019-02-22 16:13:29,948 INFO 40488 [egg-mongoose] starting...
+2019-02-22 16:13:29,978 INFO 40488 [egg-watcher:application] watcher start success
+2019-02-22 16:13:29,987 INFO 40488 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:13:29,994 INFO 40488 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:13:30,006 INFO 40488 [egg:core] dump config after ready, 7ms
+2019-02-22 16:17:02,144 INFO 40545 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:17:02,195 INFO 40545 [egg-multipart] stream mode enable
+2019-02-22 16:17:02,727 INFO 40545 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:17:02,876 INFO 40545 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:17:02,881 INFO 40545 [egg-security] use csrf middleware
+2019-02-22 16:17:02,882 INFO 40545 [egg-security] use methodnoallow middleware
+2019-02-22 16:17:02,883 INFO 40545 [egg-security] use noopen middleware
+2019-02-22 16:17:02,884 INFO 40545 [egg-security] use nosniff middleware
+2019-02-22 16:17:02,885 INFO 40545 [egg-security] use xssProtection middleware
+2019-02-22 16:17:02,886 INFO 40545 [egg-security] use xframe middleware
+2019-02-22 16:17:02,887 INFO 40545 [egg-security] use dta middleware
+2019-02-22 16:17:02,887 INFO 40545 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 16:17:02,912 INFO 40545 [egg:core] dump config after load, 14ms
+2019-02-22 16:17:02,916 INFO 40545 [egg-mongoose] starting...
+2019-02-22 16:17:02,945 INFO 40545 [egg-watcher:application] watcher start success
+2019-02-22 16:17:02,954 INFO 40545 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:17:02,961 INFO 40545 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:17:02,978 INFO 40545 [egg:core] dump config after ready, 10ms
+2019-02-22 16:17:14,229 INFO 40546 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:17:14,285 INFO 40546 [egg-multipart] stream mode enable
+2019-02-22 16:17:14,623 INFO 40546 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:17:14,721 INFO 40546 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:17:14,725 INFO 40546 [egg-security] use csrf middleware
+2019-02-22 16:17:14,726 INFO 40546 [egg-security] use methodnoallow middleware
+2019-02-22 16:17:14,726 INFO 40546 [egg-security] use noopen middleware
+2019-02-22 16:17:14,727 INFO 40546 [egg-security] use nosniff middleware
+2019-02-22 16:17:14,728 INFO 40546 [egg-security] use xssProtection middleware
+2019-02-22 16:17:14,729 INFO 40546 [egg-security] use xframe middleware
+2019-02-22 16:17:14,730 INFO 40546 [egg-security] use dta middleware
+2019-02-22 16:17:14,731 INFO 40546 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 16:17:14,748 INFO 40546 [egg:core] dump config after load, 7ms
+2019-02-22 16:17:14,751 INFO 40546 [egg-mongoose] starting...
+2019-02-22 16:17:14,788 INFO 40546 [egg-watcher:application] watcher start success
+2019-02-22 16:17:14,797 INFO 40546 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:17:14,804 INFO 40546 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:17:14,815 INFO 40546 [egg:core] dump config after ready, 6ms
+2019-02-22 16:22:24,767 INFO 40574 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:22:24,828 INFO 40574 [egg-multipart] stream mode enable
+2019-02-22 16:22:25,390 INFO 40574 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:22:25,518 INFO 40574 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:22:25,521 INFO 40574 [egg-security] use csrf middleware
+2019-02-22 16:22:25,522 INFO 40574 [egg-security] use methodnoallow middleware
+2019-02-22 16:22:25,523 INFO 40574 [egg-security] use noopen middleware
+2019-02-22 16:22:25,524 INFO 40574 [egg-security] use nosniff middleware
+2019-02-22 16:22:25,525 INFO 40574 [egg-security] use xssProtection middleware
+2019-02-22 16:22:25,526 INFO 40574 [egg-security] use xframe middleware
+2019-02-22 16:22:25,527 INFO 40574 [egg-security] use dta middleware
+2019-02-22 16:22:25,527 INFO 40574 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 16:22:25,554 INFO 40574 [egg:core] dump config after load, 14ms
+2019-02-22 16:22:25,557 INFO 40574 [egg-mongoose] starting...
+2019-02-22 16:22:25,585 INFO 40574 [egg-watcher:application] watcher start success
+2019-02-22 16:22:25,594 INFO 40574 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:22:25,603 INFO 40574 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:22:25,617 INFO 40574 [egg:core] dump config after ready, 8ms
+2019-02-22 16:23:45,393 INFO 40602 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:23:45,449 INFO 40602 [egg-multipart] stream mode enable
+2019-02-22 16:23:45,787 INFO 40602 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:23:45,906 INFO 40602 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:23:45,908 INFO 40602 [egg-security] use csrf middleware
+2019-02-22 16:23:45,910 INFO 40602 [egg-security] use methodnoallow middleware
+2019-02-22 16:23:45,910 INFO 40602 [egg-security] use noopen middleware
+2019-02-22 16:23:45,911 INFO 40602 [egg-security] use nosniff middleware
+2019-02-22 16:23:45,912 INFO 40602 [egg-security] use xssProtection middleware
+2019-02-22 16:23:45,913 INFO 40602 [egg-security] use xframe middleware
+2019-02-22 16:23:45,913 INFO 40602 [egg-security] use dta middleware
+2019-02-22 16:23:45,913 INFO 40602 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 16:23:45,939 INFO 40602 [egg:core] dump config after load, 14ms
+2019-02-22 16:23:45,941 INFO 40602 [egg-mongoose] starting...
+2019-02-22 16:23:45,969 INFO 40602 [egg-watcher:application] watcher start success
+2019-02-22 16:23:45,977 INFO 40602 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:23:45,983 INFO 40602 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:23:45,996 INFO 40602 [egg:core] dump config after ready, 8ms
+2019-02-22 16:24:04,074 INFO 40603 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:24:04,119 INFO 40603 [egg-multipart] stream mode enable
+2019-02-22 16:24:04,442 INFO 40603 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:24:04,548 INFO 40603 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:24:04,550 INFO 40603 [egg-security] use csrf middleware
+2019-02-22 16:24:04,551 INFO 40603 [egg-security] use methodnoallow middleware
+2019-02-22 16:24:04,552 INFO 40603 [egg-security] use noopen middleware
+2019-02-22 16:24:04,553 INFO 40603 [egg-security] use nosniff middleware
+2019-02-22 16:24:04,554 INFO 40603 [egg-security] use xssProtection middleware
+2019-02-22 16:24:04,554 INFO 40603 [egg-security] use xframe middleware
+2019-02-22 16:24:04,555 INFO 40603 [egg-security] use dta middleware
+2019-02-22 16:24:04,555 INFO 40603 [egg-security] compose 7 middlewares into one security middleware
+2019-02-22 16:24:04,572 INFO 40603 [egg:core] dump config after load, 6ms
+2019-02-22 16:24:04,574 INFO 40603 [egg-mongoose] starting...
+2019-02-22 16:24:04,599 INFO 40603 [egg-watcher:application] watcher start success
+2019-02-22 16:24:04,606 INFO 40603 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:24:04,613 INFO 40603 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:24:04,625 INFO 40603 [egg:core] dump config after ready, 7ms
+2019-02-22 16:53:35,049 INFO 40925 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:53:35,086 INFO 40925 [egg-multipart] stream mode enable
+2019-02-22 16:53:35,502 INFO 40925 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:53:35,616 INFO 40925 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:53:35,620 INFO 40925 [egg-security] use methodnoallow middleware
+2019-02-22 16:53:35,621 INFO 40925 [egg-security] use noopen middleware
+2019-02-22 16:53:35,622 INFO 40925 [egg-security] use nosniff middleware
+2019-02-22 16:53:35,623 INFO 40925 [egg-security] use xssProtection middleware
+2019-02-22 16:53:35,624 INFO 40925 [egg-security] use xframe middleware
+2019-02-22 16:53:35,625 INFO 40925 [egg-security] use dta middleware
+2019-02-22 16:53:35,625 INFO 40925 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 16:53:35,672 INFO 40925 [egg:core] dump config after load, 14ms
+2019-02-22 16:53:35,675 INFO 40925 [egg-mongoose] starting...
+2019-02-22 16:53:35,706 INFO 40925 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:53:35,713 INFO 40925 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:53:35,718 INFO 40925 [egg-watcher:application] watcher start success
+2019-02-22 16:53:35,735 INFO 40925 [egg:core] dump config after ready, 13ms
+2019-02-22 16:54:46,102 INFO 40974 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:54:46,194 INFO 40974 [egg-multipart] stream mode enable
+2019-02-22 16:54:46,629 INFO 40974 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:54:46,747 INFO 40974 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:54:46,750 INFO 40974 [egg-security] use methodnoallow middleware
+2019-02-22 16:54:46,751 INFO 40974 [egg-security] use noopen middleware
+2019-02-22 16:54:46,752 INFO 40974 [egg-security] use nosniff middleware
+2019-02-22 16:54:46,752 INFO 40974 [egg-security] use xssProtection middleware
+2019-02-22 16:54:46,753 INFO 40974 [egg-security] use xframe middleware
+2019-02-22 16:54:46,754 INFO 40974 [egg-security] use dta middleware
+2019-02-22 16:54:46,754 INFO 40974 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 16:54:46,769 INFO 40974 [egg:core] dump config after load, 7ms
+2019-02-22 16:54:46,771 INFO 40974 [egg-mongoose] starting...
+2019-02-22 16:54:46,804 INFO 40974 [egg-watcher:application] watcher start success
+2019-02-22 16:54:46,808 INFO 40974 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:54:46,815 INFO 40974 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:54:46,826 INFO 40974 [egg:core] dump config after ready, 6ms
+2019-02-22 16:55:14,238 INFO 40975 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:55:14,277 INFO 40975 [egg-multipart] stream mode enable
+2019-02-22 16:55:14,462 INFO 40975 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:55:14,520 INFO 40975 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:55:14,522 INFO 40975 [egg-security] use methodnoallow middleware
+2019-02-22 16:55:14,522 INFO 40975 [egg-security] use noopen middleware
+2019-02-22 16:55:14,523 INFO 40975 [egg-security] use nosniff middleware
+2019-02-22 16:55:14,523 INFO 40975 [egg-security] use xssProtection middleware
+2019-02-22 16:55:14,523 INFO 40975 [egg-security] use xframe middleware
+2019-02-22 16:55:14,524 INFO 40975 [egg-security] use dta middleware
+2019-02-22 16:55:14,524 INFO 40975 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 16:55:14,542 INFO 40975 [egg:core] dump config after load, 12ms
+2019-02-22 16:55:14,545 INFO 40975 [egg-mongoose] starting...
+2019-02-22 16:55:14,574 INFO 40975 [egg-watcher:application] watcher start success
+2019-02-22 16:55:14,582 INFO 40975 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:55:14,589 INFO 40975 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:55:14,603 INFO 40975 [egg:core] dump config after ready, 10ms
+2019-02-22 16:56:08,629 INFO 40999 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:56:08,678 INFO 40999 [egg-multipart] stream mode enable
+2019-02-22 16:56:09,252 INFO 40999 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:56:09,353 INFO 40999 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:56:09,356 INFO 40999 [egg-security] use methodnoallow middleware
+2019-02-22 16:56:09,357 INFO 40999 [egg-security] use noopen middleware
+2019-02-22 16:56:09,357 INFO 40999 [egg-security] use nosniff middleware
+2019-02-22 16:56:09,358 INFO 40999 [egg-security] use xssProtection middleware
+2019-02-22 16:56:09,359 INFO 40999 [egg-security] use xframe middleware
+2019-02-22 16:56:09,359 INFO 40999 [egg-security] use dta middleware
+2019-02-22 16:56:09,359 INFO 40999 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 16:56:09,378 INFO 40999 [egg:core] dump config after load, 10ms
+2019-02-22 16:56:09,383 INFO 40999 [egg-mongoose] starting...
+2019-02-22 16:56:09,416 INFO 40999 [egg-watcher:application] watcher start success
+2019-02-22 16:56:09,425 INFO 40999 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:56:09,431 INFO 40999 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:56:09,446 INFO 40999 [egg:core] dump config after ready, 9ms
+2019-02-22 16:57:44,607 INFO 41011 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 16:57:44,654 INFO 41011 [egg-multipart] stream mode enable
+2019-02-22 16:57:45,158 INFO 41011 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 16:57:45,249 INFO 41011 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 16:57:45,252 INFO 41011 [egg-security] use methodnoallow middleware
+2019-02-22 16:57:45,253 INFO 41011 [egg-security] use noopen middleware
+2019-02-22 16:57:45,254 INFO 41011 [egg-security] use nosniff middleware
+2019-02-22 16:57:45,255 INFO 41011 [egg-security] use xssProtection middleware
+2019-02-22 16:57:45,255 INFO 41011 [egg-security] use xframe middleware
+2019-02-22 16:57:45,256 INFO 41011 [egg-security] use dta middleware
+2019-02-22 16:57:45,256 INFO 41011 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 16:57:45,279 INFO 41011 [egg:core] dump config after load, 13ms
+2019-02-22 16:57:45,282 INFO 41011 [egg-mongoose] starting...
+2019-02-22 16:57:45,308 INFO 41011 [egg-watcher:application] watcher start success
+2019-02-22 16:57:45,316 INFO 41011 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 16:57:45,326 INFO 41011 [egg-mongoose] instance[0] start successfully
+2019-02-22 16:57:45,339 INFO 41011 [egg:core] dump config after ready, 8ms
+2019-02-22 17:06:33,924 INFO 41092 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:06:33,978 INFO 41092 [egg-multipart] stream mode enable
+2019-02-22 17:06:34,527 INFO 41092 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:06:34,799 INFO 41092 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:06:34,801 INFO 41092 [egg-security] use methodnoallow middleware
+2019-02-22 17:06:34,803 INFO 41092 [egg-security] use noopen middleware
+2019-02-22 17:06:34,804 INFO 41092 [egg-security] use nosniff middleware
+2019-02-22 17:06:34,805 INFO 41092 [egg-security] use xssProtection middleware
+2019-02-22 17:06:34,805 INFO 41092 [egg-security] use xframe middleware
+2019-02-22 17:06:34,806 INFO 41092 [egg-security] use dta middleware
+2019-02-22 17:06:34,806 INFO 41092 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:06:34,827 INFO 41092 [egg:core] dump config after load, 9ms
+2019-02-22 17:06:34,831 INFO 41092 [egg-mongoose] starting...
+2019-02-22 17:06:34,872 INFO 41092 [egg-watcher:application] watcher start success
+2019-02-22 17:06:34,876 INFO 41092 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:06:34,883 INFO 41092 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:06:34,898 INFO 41092 [egg:core] dump config after ready, 9ms
+2019-02-22 17:06:44,197 INFO 41095 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:06:44,261 INFO 41095 [egg-multipart] stream mode enable
+2019-02-22 17:06:44,811 INFO 41095 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:06:44,928 INFO 41095 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:06:44,931 INFO 41095 [egg-security] use methodnoallow middleware
+2019-02-22 17:06:44,932 INFO 41095 [egg-security] use noopen middleware
+2019-02-22 17:06:44,932 INFO 41095 [egg-security] use nosniff middleware
+2019-02-22 17:06:44,933 INFO 41095 [egg-security] use xssProtection middleware
+2019-02-22 17:06:44,934 INFO 41095 [egg-security] use xframe middleware
+2019-02-22 17:06:44,935 INFO 41095 [egg-security] use dta middleware
+2019-02-22 17:06:44,935 INFO 41095 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:06:44,959 INFO 41095 [egg:core] dump config after load, 16ms
+2019-02-22 17:06:44,962 INFO 41095 [egg-mongoose] starting...
+2019-02-22 17:06:44,987 INFO 41095 [egg-watcher:application] watcher start success
+2019-02-22 17:06:44,996 INFO 41095 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:06:45,003 INFO 41095 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:06:45,014 INFO 41095 [egg:core] dump config after ready, 6ms
+2019-02-22 17:07:50,506 INFO 41096 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:07:50,592 INFO 41096 [egg-multipart] stream mode enable
+2019-02-22 17:07:51,075 INFO 41096 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:07:51,241 INFO 41096 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:07:51,245 INFO 41096 [egg-security] use methodnoallow middleware
+2019-02-22 17:07:51,246 INFO 41096 [egg-security] use noopen middleware
+2019-02-22 17:07:51,250 INFO 41096 [egg-security] use nosniff middleware
+2019-02-22 17:07:51,250 INFO 41096 [egg-security] use xssProtection middleware
+2019-02-22 17:07:51,251 INFO 41096 [egg-security] use xframe middleware
+2019-02-22 17:07:51,252 INFO 41096 [egg-security] use dta middleware
+2019-02-22 17:07:51,252 INFO 41096 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:07:51,271 INFO 41096 [egg:core] dump config after load, 10ms
+2019-02-22 17:07:51,274 INFO 41096 [egg-mongoose] starting...
+2019-02-22 17:07:51,323 INFO 41096 [egg-watcher:application] watcher start success
+2019-02-22 17:07:51,338 INFO 41096 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:07:51,347 INFO 41096 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:07:51,368 INFO 41096 [egg:core] dump config after ready, 14ms
+2019-02-22 17:10:38,622 INFO 41120 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:10:38,678 INFO 41120 [egg-multipart] stream mode enable
+2019-02-22 17:10:39,257 INFO 41120 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:10:39,464 INFO 41120 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:10:39,467 INFO 41120 [egg-security] use methodnoallow middleware
+2019-02-22 17:10:39,468 INFO 41120 [egg-security] use noopen middleware
+2019-02-22 17:10:39,469 INFO 41120 [egg-security] use nosniff middleware
+2019-02-22 17:10:39,469 INFO 41120 [egg-security] use xssProtection middleware
+2019-02-22 17:10:39,470 INFO 41120 [egg-security] use xframe middleware
+2019-02-22 17:10:39,470 INFO 41120 [egg-security] use dta middleware
+2019-02-22 17:10:39,470 INFO 41120 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:10:39,493 INFO 41120 [egg:core] dump config after load, 9ms
+2019-02-22 17:10:39,498 INFO 41120 [egg-mongoose] starting...
+2019-02-22 17:10:39,586 INFO 41120 [egg-watcher:application] watcher start success
+2019-02-22 17:10:39,597 INFO 41120 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:10:39,604 INFO 41120 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:10:39,620 INFO 41120 [egg:core] dump config after ready, 9ms
+2019-02-22 17:21:48,627 INFO 41239 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:21:48,715 INFO 41239 [egg-multipart] stream mode enable
+2019-02-22 17:21:49,438 INFO 41239 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:21:49,705 INFO 41239 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:21:49,708 INFO 41239 [egg-security] use methodnoallow middleware
+2019-02-22 17:21:49,709 INFO 41239 [egg-security] use noopen middleware
+2019-02-22 17:21:49,710 INFO 41239 [egg-security] use nosniff middleware
+2019-02-22 17:21:49,710 INFO 41239 [egg-security] use xssProtection middleware
+2019-02-22 17:21:49,711 INFO 41239 [egg-security] use xframe middleware
+2019-02-22 17:21:49,712 INFO 41239 [egg-security] use dta middleware
+2019-02-22 17:21:49,712 INFO 41239 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:21:49,751 INFO 41239 [egg:core] dump config after load, 21ms
+2019-02-22 17:21:49,757 INFO 41239 [egg-mongoose] starting...
+2019-02-22 17:21:49,839 INFO 41239 [egg-watcher:application] watcher start success
+2019-02-22 17:21:49,852 INFO 41239 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:21:49,863 INFO 41239 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:21:49,888 INFO 41239 [egg:core] dump config after ready, 15ms
+2019-02-22 17:31:53,045 INFO 41324 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:31:53,102 INFO 41324 [egg-multipart] stream mode enable
+2019-02-22 17:31:53,506 INFO 41324 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:31:53,634 INFO 41324 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:31:53,637 INFO 41324 [egg-security] use methodnoallow middleware
+2019-02-22 17:31:53,638 INFO 41324 [egg-security] use noopen middleware
+2019-02-22 17:31:53,639 INFO 41324 [egg-security] use nosniff middleware
+2019-02-22 17:31:53,640 INFO 41324 [egg-security] use xssProtection middleware
+2019-02-22 17:31:53,640 INFO 41324 [egg-security] use xframe middleware
+2019-02-22 17:31:53,641 INFO 41324 [egg-security] use dta middleware
+2019-02-22 17:31:53,641 INFO 41324 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:31:53,661 INFO 41324 [egg:core] dump config after load, 9ms
+2019-02-22 17:31:53,664 INFO 41324 [egg-mongoose] starting...
+2019-02-22 17:31:53,698 INFO 41324 [egg-watcher:application] watcher start success
+2019-02-22 17:31:53,706 INFO 41324 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:31:53,716 INFO 41324 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:31:53,737 INFO 41324 [egg:core] dump config after ready, 15ms
+2019-02-22 17:32:22,599 INFO 41352 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:32:22,677 INFO 41352 [egg-multipart] stream mode enable
+2019-02-22 17:32:23,113 INFO 41352 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:32:23,193 INFO 41352 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:32:23,196 INFO 41352 [egg-security] use methodnoallow middleware
+2019-02-22 17:32:23,197 INFO 41352 [egg-security] use noopen middleware
+2019-02-22 17:32:23,198 INFO 41352 [egg-security] use nosniff middleware
+2019-02-22 17:32:23,198 INFO 41352 [egg-security] use xssProtection middleware
+2019-02-22 17:32:23,199 INFO 41352 [egg-security] use xframe middleware
+2019-02-22 17:32:23,200 INFO 41352 [egg-security] use dta middleware
+2019-02-22 17:32:23,200 INFO 41352 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:32:23,223 INFO 41352 [egg:core] dump config after load, 16ms
+2019-02-22 17:32:23,226 INFO 41352 [egg-mongoose] starting...
+2019-02-22 17:32:23,249 INFO 41352 [egg-watcher:application] watcher start success
+2019-02-22 17:32:23,257 INFO 41352 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:32:23,263 INFO 41352 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:32:23,282 INFO 41352 [egg:core] dump config after ready, 14ms
+2019-02-22 17:32:27,906 INFO 41356 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:32:27,944 INFO 41356 [egg-multipart] stream mode enable
+2019-02-22 17:32:28,134 INFO 41356 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:32:28,189 INFO 41356 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:32:28,191 INFO 41356 [egg-security] use methodnoallow middleware
+2019-02-22 17:32:28,192 INFO 41356 [egg-security] use noopen middleware
+2019-02-22 17:32:28,192 INFO 41356 [egg-security] use nosniff middleware
+2019-02-22 17:32:28,192 INFO 41356 [egg-security] use xssProtection middleware
+2019-02-22 17:32:28,192 INFO 41356 [egg-security] use xframe middleware
+2019-02-22 17:32:28,193 INFO 41356 [egg-security] use dta middleware
+2019-02-22 17:32:28,193 INFO 41356 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:32:28,208 INFO 41356 [egg:core] dump config after load, 9ms
+2019-02-22 17:32:28,211 INFO 41356 [egg-mongoose] starting...
+2019-02-22 17:32:28,235 INFO 41356 [egg-watcher:application] watcher start success
+2019-02-22 17:32:28,243 INFO 41356 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:32:28,249 INFO 41356 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:32:28,268 INFO 41356 [egg:core] dump config after ready, 14ms
+2019-02-22 17:32:52,889 INFO 41358 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:32:52,933 INFO 41358 [egg-multipart] stream mode enable
+2019-02-22 17:32:53,186 INFO 41358 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:32:53,251 INFO 41358 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:32:53,254 INFO 41358 [egg-security] use methodnoallow middleware
+2019-02-22 17:32:53,255 INFO 41358 [egg-security] use noopen middleware
+2019-02-22 17:32:53,255 INFO 41358 [egg-security] use nosniff middleware
+2019-02-22 17:32:53,255 INFO 41358 [egg-security] use xssProtection middleware
+2019-02-22 17:32:53,255 INFO 41358 [egg-security] use xframe middleware
+2019-02-22 17:32:53,256 INFO 41358 [egg-security] use dta middleware
+2019-02-22 17:32:53,256 INFO 41358 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:32:53,272 INFO 41358 [egg:core] dump config after load, 8ms
+2019-02-22 17:32:53,276 INFO 41358 [egg-mongoose] starting...
+2019-02-22 17:32:53,315 INFO 41358 [egg-watcher:application] watcher start success
+2019-02-22 17:32:53,323 INFO 41358 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:32:53,331 INFO 41358 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:32:53,342 INFO 41358 [egg:core] dump config after ready, 6ms
+2019-02-22 17:32:55,583 INFO 41361 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:32:55,624 INFO 41361 [egg-multipart] stream mode enable
+2019-02-22 17:32:55,829 INFO 41361 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:32:55,882 INFO 41361 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:32:55,885 INFO 41361 [egg-security] use methodnoallow middleware
+2019-02-22 17:32:55,885 INFO 41361 [egg-security] use noopen middleware
+2019-02-22 17:32:55,886 INFO 41361 [egg-security] use nosniff middleware
+2019-02-22 17:32:55,886 INFO 41361 [egg-security] use xssProtection middleware
+2019-02-22 17:32:55,886 INFO 41361 [egg-security] use xframe middleware
+2019-02-22 17:32:55,887 INFO 41361 [egg-security] use dta middleware
+2019-02-22 17:32:55,887 INFO 41361 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:32:55,901 INFO 41361 [egg:core] dump config after load, 8ms
+2019-02-22 17:32:55,904 INFO 41361 [egg-mongoose] starting...
+2019-02-22 17:32:55,928 INFO 41361 [egg-watcher:application] watcher start success
+2019-02-22 17:32:55,936 INFO 41361 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:32:55,943 INFO 41361 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:32:55,953 INFO 41361 [egg:core] dump config after ready, 5ms
+2019-02-22 17:36:13,127 INFO 41394 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:36:13,201 INFO 41394 [egg-multipart] stream mode enable
+2019-02-22 17:36:13,844 INFO 41394 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:36:13,964 INFO 41394 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:36:13,967 INFO 41394 [egg-security] use methodnoallow middleware
+2019-02-22 17:36:13,968 INFO 41394 [egg-security] use noopen middleware
+2019-02-22 17:36:13,969 INFO 41394 [egg-security] use nosniff middleware
+2019-02-22 17:36:13,970 INFO 41394 [egg-security] use xssProtection middleware
+2019-02-22 17:36:13,970 INFO 41394 [egg-security] use xframe middleware
+2019-02-22 17:36:13,971 INFO 41394 [egg-security] use dta middleware
+2019-02-22 17:36:13,971 INFO 41394 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:36:13,990 INFO 41394 [egg:core] dump config after load, 7ms
+2019-02-22 17:36:13,992 INFO 41394 [egg-mongoose] starting...
+2019-02-22 17:36:14,019 INFO 41394 [egg-watcher:application] watcher start success
+2019-02-22 17:36:14,027 INFO 41394 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:36:14,035 INFO 41394 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:36:14,052 INFO 41394 [egg:core] dump config after ready, 12ms
+2019-02-22 17:40:02,731 INFO 41429 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:40:02,805 INFO 41429 [egg-multipart] stream mode enable
+2019-02-22 17:40:03,285 INFO 41429 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:40:03,498 INFO 41429 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:40:03,501 INFO 41429 [egg-security] use methodnoallow middleware
+2019-02-22 17:40:03,502 INFO 41429 [egg-security] use noopen middleware
+2019-02-22 17:40:03,504 INFO 41429 [egg-security] use nosniff middleware
+2019-02-22 17:40:03,504 INFO 41429 [egg-security] use xssProtection middleware
+2019-02-22 17:40:03,505 INFO 41429 [egg-security] use xframe middleware
+2019-02-22 17:40:03,506 INFO 41429 [egg-security] use dta middleware
+2019-02-22 17:40:03,506 INFO 41429 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:40:03,532 INFO 41429 [egg:core] dump config after load, 12ms
+2019-02-22 17:40:03,536 INFO 41429 [egg-mongoose] starting...
+2019-02-22 17:40:03,579 INFO 41429 [egg-watcher:application] watcher start success
+2019-02-22 17:40:03,583 INFO 41429 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:40:03,592 INFO 41429 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:40:03,606 INFO 41429 [egg:core] dump config after ready, 8ms
+2019-02-22 17:40:43,464 INFO 41434 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:40:43,512 INFO 41434 [egg-multipart] stream mode enable
+2019-02-22 17:40:43,747 INFO 41434 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:40:43,820 INFO 41434 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:40:43,822 INFO 41434 [egg-security] use methodnoallow middleware
+2019-02-22 17:40:43,822 INFO 41434 [egg-security] use noopen middleware
+2019-02-22 17:40:43,823 INFO 41434 [egg-security] use nosniff middleware
+2019-02-22 17:40:43,823 INFO 41434 [egg-security] use xssProtection middleware
+2019-02-22 17:40:43,823 INFO 41434 [egg-security] use xframe middleware
+2019-02-22 17:40:43,824 INFO 41434 [egg-security] use dta middleware
+2019-02-22 17:40:43,824 INFO 41434 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:40:43,841 INFO 41434 [egg:core] dump config after load, 9ms
+2019-02-22 17:40:43,844 INFO 41434 [egg-mongoose] starting...
+2019-02-22 17:40:43,876 INFO 41434 [egg-watcher:application] watcher start success
+2019-02-22 17:40:43,887 INFO 41434 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:40:43,895 INFO 41434 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:40:43,915 INFO 41434 [egg:core] dump config after ready, 14ms
+2019-02-22 17:40:53,197 INFO 41436 [egg:logger] init all loggers with options: {"dir":"/Users/baibangyi/car-shop/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"car-app-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-22 17:40:53,234 INFO 41436 [egg-multipart] stream mode enable
+2019-02-22 17:40:53,414 INFO 41436 [egg-mongoose] connecting mongodb://localhost:27017/carShop
+2019-02-22 17:40:53,485 INFO 41436 [egg-static] starting static serve /public/ -> /Users/baibangyi/car-shop/public
+2019-02-22 17:40:53,487 INFO 41436 [egg-security] use methodnoallow middleware
+2019-02-22 17:40:53,487 INFO 41436 [egg-security] use noopen middleware
+2019-02-22 17:40:53,488 INFO 41436 [egg-security] use nosniff middleware
+2019-02-22 17:40:53,488 INFO 41436 [egg-security] use xssProtection middleware
+2019-02-22 17:40:53,488 INFO 41436 [egg-security] use xframe middleware
+2019-02-22 17:40:53,489 INFO 41436 [egg-security] use dta middleware
+2019-02-22 17:40:53,489 INFO 41436 [egg-security] compose 6 middlewares into one security middleware
+2019-02-22 17:40:53,511 INFO 41436 [egg:core] dump config after load, 15ms
+2019-02-22 17:40:53,518 INFO 41436 [egg-mongoose] starting...
+2019-02-22 17:40:53,548 INFO 41436 [egg-watcher:application] watcher start success
+2019-02-22 17:40:53,556 INFO 41436 [egg-mongoose] mongodb://localhost:27017/carShop connected successfully
+2019-02-22 17:40:53,565 INFO 41436 [egg-mongoose] instance[0] start successfully
+2019-02-22 17:40:53,588 INFO 41436 [egg:core] dump config after ready, 17ms

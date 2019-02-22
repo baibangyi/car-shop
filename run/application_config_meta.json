@@ -63,36 +63,9 @@
   },
   "keys": "/Users/baibangyi/car-shop/config/config.default.js",
   "middleware": "/Users/baibangyi/car-shop/config/config.default.js",
-  "development": {
-    "watchDirs": "/Users/baibangyi/car-shop/config/config.local.js",
-    "ignoreDirs": "/Users/baibangyi/car-shop/config/config.local.js",
-    "fastReady": "/Users/baibangyi/car-shop/node_modules/egg-development/config/config.default.js",
-    "reloadOnDebug": "/Users/baibangyi/car-shop/node_modules/egg-development/config/config.default.js",
-    "overrideDefault": "/Users/baibangyi/car-shop/node_modules/egg-development/config/config.default.js"
-  },
-  "logview": {
-    "dir": "/Users/baibangyi/car-shop/config/config.local.js",
-    "prefix": "/Users/baibangyi/car-shop/node_modules/egg-logview/config/config.default.js",
-    "staticHost": "/Users/baibangyi/car-shop/node_modules/egg-logview/config/config.default.js"
-  },
-  "mongoose": {
-    "url": "/Users/baibangyi/car-shop/config/config.local.js",
-    "options": {
-      "connectTimeoutMS": "/Users/baibangyi/car-shop/config/config.local.js",
-      "socketTimeoutMS": "/Users/baibangyi/car-shop/config/config.local.js",
-      "maxPoolSize": "/Users/baibangyi/car-shop/config/config.local.js",
-      "minPoolSize": "/Users/baibangyi/car-shop/config/config.local.js"
-    },
-    "loadModel": "/Users/baibangyi/car-shop/node_modules/egg-mongoose/config/config.default.js",
-    "app": "/Users/baibangyi/car-shop/node_modules/egg-mongoose/config/config.default.js",
-    "agent": "/Users/baibangyi/car-shop/node_modules/egg-mongoose/config/config.default.js"
-  },
   "security": {
-    "domainWhiteList": "/Users/baibangyi/car-shop/config/config.local.js",
-    "protocolWhiteList": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
     "csrf": {
-      "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+      "enable": "/Users/baibangyi/car-shop/config/config.default.js",
       "useSession": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
       "ignoreJSON": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
       "cookieName": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
@@ -101,6 +74,9 @@
       "bodyName": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
       "queryName": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
     },
+    "domainWhiteList": "/Users/baibangyi/car-shop/config/config.local.js",
+    "protocolWhiteList": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
     "xframe": {
       "enable": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
       "value": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
@@ -138,6 +114,30 @@
       "ipBlackList": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js",
       "checkAddress": "/Users/baibangyi/car-shop/node_modules/egg-security/config/config.default.js"
     }
+  },
+  "development": {
+    "watchDirs": "/Users/baibangyi/car-shop/config/config.local.js",
+    "ignoreDirs": "/Users/baibangyi/car-shop/config/config.local.js",
+    "fastReady": "/Users/baibangyi/car-shop/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/baibangyi/car-shop/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/baibangyi/car-shop/node_modules/egg-development/config/config.default.js"
+  },
+  "logview": {
+    "dir": "/Users/baibangyi/car-shop/config/config.local.js",
+    "prefix": "/Users/baibangyi/car-shop/node_modules/egg-logview/config/config.default.js",
+    "staticHost": "/Users/baibangyi/car-shop/node_modules/egg-logview/config/config.default.js"
+  },
+  "mongoose": {
+    "url": "/Users/baibangyi/car-shop/config/config.local.js",
+    "options": {
+      "connectTimeoutMS": "/Users/baibangyi/car-shop/config/config.local.js",
+      "socketTimeoutMS": "/Users/baibangyi/car-shop/config/config.local.js",
+      "maxPoolSize": "/Users/baibangyi/car-shop/config/config.local.js",
+      "minPoolSize": "/Users/baibangyi/car-shop/config/config.local.js"
+    },
+    "loadModel": "/Users/baibangyi/car-shop/node_modules/egg-mongoose/config/config.default.js",
+    "app": "/Users/baibangyi/car-shop/node_modules/egg-mongoose/config/config.default.js",
+    "agent": "/Users/baibangyi/car-shop/node_modules/egg-mongoose/config/config.default.js"
   },
   "session": {
     "maxAge": "/Users/baibangyi/car-shop/node_modules/egg-session/config/config.default.js",
